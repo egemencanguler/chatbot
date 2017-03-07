@@ -1,0 +1,11 @@
+{CR} dersliği nerede?
+{CR} dersliği {CFI} katta.
+
+{CR} dersliği hangi katta?
+{CR} dersliği {CFI} katta.
+
+{CR} dersliğine nasıl giderim?
+{CR} dersliği {CFI} katta.
+
+{CR} nerede?
+{CR} dersliği {CFI} katta.
