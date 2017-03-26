@@ -39,6 +39,8 @@ def importConversations(filePath):
         else:
             con.append(l)
     file.close()
+    if len(conversations) == 0:
+        conversations.append(con)
     return conversations
 
 def exportConversations(filePath,conversations):

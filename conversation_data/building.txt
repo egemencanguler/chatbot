@@ -1,11 +1,11 @@
-{CR} dersliği nerede?
-{CR} dersliği {CFI} katta.
+{Classroom} dersliği nerede?
+{Classroom} dersliği {ClassroomFloor} katta.
 
-{CR} dersliği hangi katta?
-{CR} dersliği {CFI} katta.
+{Classroom} dersliği hangi katta?
+{Classroom} dersliği {ClassroomFloor} katta.
 
-{CR} dersliğine nasıl giderim?
-{CR} dersliği {CFI} katta.
+{Classroom} dersliğine nasıl giderim?
+{Classroom} dersliği {ClassroomFloor} katta.
 
-{CR} nerede?
-{CR} dersliği {CFI} katta.
+{Classroom} nerede?
+{Classroom} dersliği {ClassroomFloor} katta.

@@ -14,20 +14,24 @@ regexs = [
 class Preprocessor:
 
     def __init__(self):
-        self.im = Info.InformationManager()
+        from preprocessing.stemmer import Stemmer
+        self.stemmer = Stemmer()
+        pass
 
-    def process(self,text):
-        text = text.lower()
+    def process(self,question):
+        text = question.raw.lower()
         # Extract information from text and replace common structures
         for r in regexs:
-            match = re.match(r[0],text)
+            match = re.search(r[0],text)
             if match:
                 value = None
                 if r[1] == Info.STOKEN_COURSE_CODE or r[1] == Info.STOKEN_CLASSROOM:
                     value = match.group(1) + match.group(2)
                 else:
                     value = match.group(1)
-                self.im.putTokenValue(r[1],value)
+                question.putInformation(r[1],value)
                 text = re.sub(r[0],r[1],text)
-
-        return text
+        question.processed = text
+        question.stemmed = self.stemmer.stem(question.raw)
+        print(text)
+        return question

@@ -13,20 +13,24 @@ class EmailLogicAdapter(LogicAdapter):
                            Statement("Mailimi söyleyebilirmisin"),
                            Statement("mailim ne?"),
                            Statement("Bölüm mailimi nasıl öğrenebilirim")]
+        self.im = Info.InformationManager()
 
     def process(self, statement):
         from chatterbot.conversation import Statement
         text = statement.text.lower()
         if self.questionAsked:
+            print("HEY", statement, ", ", Info.STOKEN_STUDENT_NO)
             self.questionAsked = False
-            match = re.match(Info.TOKEN_STUDENT_NO,text)
-            if match:
-                return 1, Statement("Bölüm mailiniz: b" + Info + "@cs.hacettepe.edu.tr")
+            match = re.match(Info.STOKEN_STUDENT_NO,text)
+            if statement == Info.STOKEN_CLASSROOM:
+                print(" LOLO")
+                return 1, Statement("Bölüm mailiniz: b" + Info.STOKEN_STUDENT_NO + "@cs.hacettepe.edu.tr")
         confidence = 0
         response = "Öğrenci numaranızı yazarsanız yardımcı olabilirim."
         for s in self.statements:
             confidence = levenshtein_distance(s, statement)
             if confidence > 0.5:
+                print("hooo")
                 self.questionAsked = True
                 break
         return confidence, Statement(response)

@@ -1,6 +1,5 @@
-from preprocessor import Preprocessor
 import information as Info
-
+from preprocessing.preprocessor import Preprocessor
 
 im = Info.InformationManager()
 

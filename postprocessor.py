@@ -8,6 +8,7 @@ class Postprocessor:
         self.im = Info.InformationManager()
 
     def process(self,text):
+        print("Post processing: ", text)
         # Replace placeholder statement tokens with real values
         for i in Info.STATEMENT_TOKENS:
             value = self.im.getTokenValue(i)
