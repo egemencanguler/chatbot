@@ -1,0 +1,25 @@
+{Name} hocanın odası nerede?
+2. katta
+
+{Name} hocanın mail adresini öğrenebilirmiyim?
+sdasd@gmail.com
+
+{CourseName} dersinin kredisi kaç?
+3
+
+{CourseName} dersi saat kaçta?
+saat 15:00 da
+
+Saat kaç?
+17:30
+
+1. dönem derslerini öğrenebilirmiyim?
+Programlamaya giriş, mat1
+
+Bölümümüzün kodu kaç?
+635
+
+Staj için hangi belgeler gerekli
+belge1, belge2 gerekli
+
+

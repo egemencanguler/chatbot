@@ -1,4 +1,13 @@
 class DataBase:
+    # Singleton
+    __instance = None
+
+    def __new__(cls):
+        if DataBase.__instance is None:
+            DataBase.__instance = object.__new__(cls)
+            DataBase.__instance.statementTokens = {}
+        return DataBase.__instance
+
     def __init__(self):
         from pymongo import MongoClient
         self.client = MongoClient()

@@ -1,19 +1,19 @@
 Bölüm mailim ne?
 Öğrenci numaranızı söylerseniz yardımcı olabilirim.
-{StuentNo}
+{StudentNo}
 Bölüm mailiniz b{StudentNo}@cs.hacettepe.edu.tr
 
 Mailimi söyleyebilirmisin?
 Öğrenci numaranızı söylerseniz yardımcı olabilirim.
-{StuentNo}
+{StudentNo}
 Bölüm mailiniz b{StudentNo}@cs.hacettepe.edu.tr
 
 mailim ne?
 Öğrenci numaranızı söylerseniz yardımcı olabilirim.
-{StuentNo}
+{StudentNo}
 Bölüm mailiniz b{StudentNo}@cs.hacettepe.edu.tr
 
 Bölüm mail adresimi öğrenebilirmiyim?
 Öğrenci numaranızı söylerseniz yardımcı olabilirim.
-{StuentNo}
+{StudentNo}
 Bölüm mailiniz b{StudentNo}@cs.hacettepe.edu.tr

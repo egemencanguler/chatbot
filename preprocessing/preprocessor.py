@@ -1,5 +1,6 @@
 import re
 import information as Info
+from containers.question import Question
 
 
 # regular expression and corresponding placeholder tokens
@@ -18,8 +19,8 @@ class Preprocessor:
         self.stemmer = Stemmer()
         pass
 
-    def process(self,question):
-        text = question.raw.lower()
+    def process(self,text):
+        question = Question(text.lower())
         # Extract information from text and replace common structures
         for r in regexs:
             match = re.search(r[0],text)
@@ -33,5 +34,14 @@ class Preprocessor:
                 text = re.sub(r[0],r[1],text)
         question.processed = text
         question.stemmed = self.stemmer.stem(question.raw)
-        print(text)
         return question
+
+    def tokenize(self,text):
+        punctuations = (r"\.", r":", r";", r"\?", ",", "!")
+        tokens = []
+        text = text.strip().lower()
+        # processed = re.sub(r'<.*>', '', text)
+        for p in punctuations:
+            text = re.sub(p, " " + p.replace("\\", ""), text)
+        tokens += [t for t in re.split(" +", text) if t != ""]
+        return tokens

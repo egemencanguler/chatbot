@@ -37,7 +37,7 @@ def importConversations(filePath):
             conversations.append(con)
             con = []
         else:
-            con.append(l)
+            con.append(l.lower())
     file.close()
     if len(conversations) == 0:
         conversations.append(con)
