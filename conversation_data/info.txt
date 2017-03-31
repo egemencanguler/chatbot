@@ -1,0 +1,340 @@
+Burçak ASAL
+E-Posta :
+basal[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7518
+Ofis :
+122
+Web Sitesi :
+--
+Araştırma Alanları : --
+
+Emre AYDOĞAN
+E-Posta :
+emreaydogan[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7516
+Ofis :
+Z06
+Web Sitesi :
+http://web.cs.hacettepe.edu.tr/~emreaydogan/
+Araştırma Alanları : Kötücül Yazılım Analizi, Bilgi Güvenliği, Evrimsel Hesaplama
+
+Öner BARUT
+E-Posta :
+onerbarut[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7518
+Ofis :
+122
+Web Sitesi :
+--
+Araştırma Alanları : Computer Graphics, Crowd Simulation, GPGPU
+
+Çağdaş BAŞ
+E-Posta :
+cagdasbas[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7499
+Ofis :
+Z03
+Web Sitesi :
+http://web.cs.hacettepe.edu.tr/~cagdasbas/
+Araştırma Alanları : Bilgisayarlı Görü, Makine Öğrenmesi
+
+Abdurrahman BAYRAK
+E-Posta :
+abayrak[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7512
+Ofis :
+Z07
+Web Sitesi :
+linked-in
+Araştırma Alanları : Robotik, Modern Konrtol Teorisi, İHA Rota Planlama, Mantıksal Tasarım, FPGA Tasarımı, VHDL, Paralel Programlama
+
+Dr. Ahmet Selman BOZKIR
+E-Posta :
+selman[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7527
+Ofis :
+222
+Web Sitesi :
+http://www.ahmetselman.com/
+Araştırma Alanları : Similarity, Information Retrieval, Machine Learning, Decision Support Systems, Computer Vision
+
+Necva BÖLÜCÜ
+E-Posta :
+necva[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7511
+Ofis :
+121
+Web Sitesi :
+--
+Araştırma Alanları : Doğal Dil İşleme
+
+Pelin CANBAY
+E-Posta :
+pelin[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7527
+Ofis :
+222
+Web Sitesi :
+--
+Araştırma Alanları : Doğal Dil İşleme, Veri Mahremiyeti, Mahremiyet Koruma, Bilgi Çıkarımı
+
+Ali ÇAĞLAYAN
+E-Posta :
+alicaglayan[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7504
+Ofis :
+226
+Web Sitesi :
+--
+Araştırma Alanları : Computer Vision, Machine Learning, Deep Learning, Object Recognation
+
+Selma DİLEK
+E-Posta :
+selma[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7511
+Ofis :
+121
+Web Sitesi :
+https://www.linkedin.com/in/selmadilek
+Araştırma Alanları : Wireless Sensor Networks, Algorithm Design, Digital Logic Design, Robotics, Artificial Intelligence
+
+Bahar GEZİCİ
+E-Posta :
+bahargezici[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7511
+Ofis :
+121
+Web Sitesi :
+--
+Araştırma Alanları : --
+
+Tuğba GÜRGEN ERDOĞAN
+E-Posta :
+tugba[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7512
+Ofis :
+Z07
+Web Sitesi :
+--
+Araştırma Alanları : --
+
+Handan GÜRSOY
+E-Posta :
+hgursoy[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7512
+Ofis :
+Z07
+Web Sitesi :
+--
+Araştırma Alanları : --
+
+Gültekin IŞIK
+E-Posta :
+gultekin[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7512
+Ofis :
+Z07
+Web Sitesi :
+http://tekinonlayn.github.io
+Araştırma Alanları : Makine Öğrenmesi, Konuşma Tanıma
+
+Işıl KARABEY
+E-Posta :
+isilkarabey@cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7524
+Ofis :
+Z06
+Web Sitesi :
+linked-in
+Araştırma Alanları : Information Security, Cryptography, Cloud Computing, Indoor Localization, Android Mobile App Development
+
+Levent KARACAN
+E-Posta :
+karacan[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7517
+Ofis :
+Z03
+Web Sitesi :
+--
+Araştırma Alanları : --
+
+Dr. Aydın KAYA
+E-Posta :
+aydinkaya[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7509
+Ofis :
+225
+Web Sitesi :
+--
+Araştırma Alanları : --
+
+Dr. Ali Seydi KEÇELİ
+E-Posta :
+aliseydi[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7509
+Ofis :
+225
+Web Sitesi :
+--
+Araştırma Alanları : Computer Vision, Data Mining, Medical Image Analysis
+
+Feyza Nur KILIÇASLAN
+E-Posta :
+feyzanur[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7511
+Ofis :
+121
+Web Sitesi :
+--
+Araştırma Alanları : Yazılım Mühendisliği, Yazılım Kalite Yönetimi, Yazılım Metrikleri
+
+Aysun KOÇAK
+E-Posta :
+aysunkocak[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7517
+Ofis :
+Z03
+Web Sitesi :
+--
+Araştırma Alanları : Computer Vision, Machine Learning
+
+Cumhur Yiğit ÖZCAN
+E-Posta :
+cumhuryigitozcan[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7518
+Ofis :
+122
+Web Sitesi :
+linked-in
+Araştırma Alanları : Bilgisayar Grafiği, Kalabalık Benzetimi, Kalabalık Gezinim Yöntemleri
+
+Ali Osman SERHATOĞLU
+E-Posta :
+aoserhatoglu[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7504
+Ofis :
+226
+Web Sitesi :
+--
+Araştırma Alanları : NLP, Information Extraction, Machine Learning
+
+Efsun SEZER
+E-Posta :
+efsunsezer[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7516
+Ofis :
+Z06
+Web Sitesi :
+--
+Araştırma Alanları : Computer Vision, Machine Learning
+
+Yasin ŞAHİN
+E-Posta :
+yasin[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7504
+Ofis :
+226
+Web Sitesi :
+linked-in
+Araştırma Alanları : --
+
+Hüseyin TEMUÇİN
+E-Posta :
+htemucin[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7505
+Ofis :
+225
+Web Sitesi :
+--
+Araştırma Alanları : --
+
+Alaettin UÇAN
+E-Posta :
+aucan[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7527
+Ofis :
+222
+Web Sitesi :
+https://tr.linkedin.com/in/alaettin-ucan
+Araştırma Alanları : Sentiment Analysis, Text Analysis, Text Mining, Information Retrieval, Smart Environments
+
+Burcu YALÇINER
+E-Posta :
+burcuyalciner[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7511
+Ofis :
+121
+Web Sitesi :
+--
+Araştırma Alanları : --
+
+Yalın YALIÇ
+E-Posta :
+yalinyalic[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7505
+Ofis :
+225
+Web Sitesi :
+--
+Araştırma Alanları : --
+
+Nebi YILMAZ
+E-Posta :
+yilmaz[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7511
+Ofis :
+121
+Web Sitesi :
+--
+Araştırma Alanları : --
+
+Selim YILMAZ
+E-Posta :
+selimy[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7524
+Ofis :
+Z06
+Web Sitesi :
+--
+Araştırma Alanları : --
+
+Cemil ZALLUHOĞLU
+E-Posta :
+cemil[at]cs.hacettepe.edu.tr
+Tel :
+(0312) 780 7522
+Ofis :
+Z03
+Web Sitesi :
+http://web.cs.hacettepe.edu.tr/~cemil/
+Araştırma Alanları : Computer Vision, Deep Learning, Crowd Analysis, Human Activity Recognition

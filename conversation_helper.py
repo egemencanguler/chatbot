@@ -1,51 +1,38 @@
-import io
-
-def generateFromTerminal():
-    filePath = "conversation.txt"
-
-    line = ""
-    while line != "yes":
-        print("Please enter a file path")
-        filePath = input()
-        print("File path is ", filePath)
-        print("Write yes to continue anything else to reenter the file path")
-        line = input()
-
-    print("Now, you can start to enter the conversation, type * to end the conversation and type end to exit the program")
-    file = open(filePath, "w", encoding= "utf-8")
-    line = ""
-    conversation = []
-    while line != "end":
-        line = input()
-        if line == "*":
-            print(conversation)
-            file.writelines(conversation)
-            file.write("\n")
-            conversation = []
-        else:
-            conversation.append(line + "\n")
-    file.close()
-
-
+import re
+import information.information as INFO
+def checkPlaceHolders(line):
+    placeHolders = INFO.QUESTION_PLACEHOLDERS + INFO.ANSWER_PLACEHOLDERS
+    for p in re.findall("(<[^<>]*>)",line):
+        if p not in placeHolders:
+            print("*****Undefined placeholder*****",p)
 
 def importConversations(filePath):
-    file = open(filePath,"r",encoding="utf-8")
+    # Conversations
     conversations = []
+    file = open(filePath,"r",encoding="utf-8")
+    line = file.readline()
+    type = ""
     con = []
-    for l in file:
-        if l == "\n":
-            conversations.append(con)
+    while line:
+        if line.startswith("#"):
+            print("\n" + line.strip())
+        elif line.startswith("*"):
+            # End of a question answer pair
+            print("New Conversation", con)
+            conversations.extend(multiplyConversation(con))
             con = []
         else:
-            con.append(l.lower())
-    file.close()
-    if len(conversations) == 0:
-        conversations.append(con)
+            checkPlaceHolders(line)
+            con.append(line.strip())
+        line = file.readline()
+    print(conversations)
     return conversations
 
-def exportConversations(filePath,conversations):
-    file = open(filePath, "w", encoding="utf-8")
-    for c in conversations:
-        file.writelines(c)
-        file.write("\n")
-    file.close()
+def multiplyConversation(con):
+    question = con[0]
+    if question.find(INFO.Q_NAME) != -1:
+        variations = []
+        for name in INFO.PEOPLE.keys():
+            variations.append([question.replace(INFO.Q_NAME,name),con[1]])
+        return variations
+    return [con]

@@ -1,28 +1,26 @@
 from chatterbot.logic.logic_adapter import LogicAdapter
 from database.database import DataBase
-from preprocessing.preprocessor import Preprocessor
+from preprocessing.stemmer import Stemmer
 from containers.question import Question
-from chatterbot.comparisons import levenshtein_distance
+import chatterbot.comparisons as comparisons
 from chatterbot.conversation import Statement
 
 class VectorLogicAdapter(LogicAdapter):
     def __init__(self, **kwargs):
         super(VectorLogicAdapter, self).__init__(**kwargs)
         self.db = DataBase()
-        self.preprocessor = Preprocessor()
+        self.stemmer = Stemmer()
 
-    def getVector(self,text):
-        tokens = self.preprocessor.tokenize(text)
+    def getVector(self,tokens,info):
         vec = [0 for x in range(200)]
         for t in tokens:
             v = self.db.getVector(t)
             if v is None:
-                v = self.db.getVector(self.preprocessor.stemmer.stem(t))
+                v = self.db.getVector(self.stemmer.stem(t))
             if v is not None:
                 vec = [x + y for x, y in zip(vec, v)]
-        if vec  == [0 for x in range(200)]:
-            print("No Vector for " + text)
-            pass
+            elif info:
+                print("No vector for word", t,"or",self.stemmer.stem(t))
         return vec
 
     def cosine_similarity(self,vec1, vec2):
@@ -33,13 +31,6 @@ class VectorLogicAdapter(LogicAdapter):
         if div == 0:
             return 0
         return dot / div
-
-    def compare(self, text1, text2):
-        text1 = text1.lower()
-        text2 = text2.lower()
-        vec1 = self.getVector(text1)
-        vec2 = self.getVector(text2)
-        return self.cosine_similarity(vec1, vec2)
 
     def get(self, input_statement):
         """
@@ -64,17 +55,16 @@ class VectorLogicAdapter(LogicAdapter):
         closest_match = input_statement
         closest_match.confidence = 0
         # Find the closest matching known statement
+        questionVector = self.getVector(input_statement.question.cleanTokenized,True)
         for statement in statement_list:
-            statement.question = self.preprocessor.process(statement.text)
+            statement.question = Question(statement.text)
+            lev1 = Statement(input_statement.question.withPlaceHolders)
+            lev2 = Statement(statement.question.withPlaceHolders)
+            lev_similarity = comparisons.levenshtein_distance(lev1,lev2)
+            cosine_similarity = self.cosine_similarity(questionVector,self.getVector(statement.question.cleanTokenized,False))
 
-            lev_similarity = levenshtein_distance(Statement(input_statement.question.processed.lower()),Statement(statement.question.processed))
-            cosine_similarity = self.compare(input_statement.question.processed, statement.question.processed)
-
-            # confidence = max(cosine_similarity,lev_similarity)
             confidence = cosine_similarity
-            # if lev_similarity == 1:
-            #     confidence = lev_similarity
-
+            # print(statement.text,cosine_similarity,lev_similarity)
             if confidence > closest_match.confidence:
                 statement.confidence = confidence
                 closest_match = statement
@@ -83,7 +73,7 @@ class VectorLogicAdapter(LogicAdapter):
 
     def process(self,input_statement):
 
-        input_statement.question = self.preprocessor.process(input_statement.text)
+        input_statement.question = self.chatbot.question
 
         # Select the closest match to the input statement
         closest_match = self.get(input_statement)

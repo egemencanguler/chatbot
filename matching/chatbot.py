@@ -1,5 +1,5 @@
 
-
+from containers.question import Question
 class Chatbot:
     def __init__(self):
         from chatterbot import ChatBot
@@ -12,8 +12,6 @@ class Chatbot:
                 #     "statement_comparison_function": "chatterbot.comparisons.levenshtein_distance",
                 #     "response_selection_method": "chatterbot.response_selection.get_first_response"
                 # }
-                # ,
-                # {"import_path": "logic_adapters.vector_logic_adapter.VectorLogicAdapter"},
                 # "chatterbot.logic.MathematicalEvaluation",
                 {"import_path": "logic_adapters.vector_logic_adapter.VectorLogicAdapter"},
                 # {"import_path": "logic_adapters.time_logic_adapter.TimeLogicAdapter"}
@@ -22,23 +20,37 @@ class Chatbot:
             database="./database.json",
             read_only=True  # don't train bot with user data
         )
-
         self.__train()
 
-    def answer(self,question):
-        return self.chatbot.get_response(question)
+    def answer(self,text):
+        print("")
+        print("Question",text)
+        self.chatbot.question = Question(text)
+        self.chatbot.question.show()
+        print("\nAnswering..")
+        rawResponse = self.chatbot.get_response(text).text
+        return self.__processResponse(rawResponse)
 
     def __train(self):
+        return
         from chatterbot.trainers import ListTrainer
         import conversation_helper
 
-        # faqs = conversation_helper.importConversations("./conversation_data/faqs.txt")
-        greetings = conversation_helper.importConversations("./conversation_data/greetings.txt")
-        building = conversation_helper.importConversations("./conversation_data/building.txt")
-        mail = conversation_helper.importConversations("./conversation_data/mail.txt")
-        questions = conversation_helper.importConversations("./conversation_data/questions.txt")
-        conversations = greetings + building + mail + questions
-
+        conversations = conversation_helper.importConversations("./conversation_data/questions.txt")
+        print("Training..",len(conversations))
         self.chatbot.set_trainer(ListTrainer)
+        counter = 0
         for c in conversations:
+            print(counter)
+            counter += 1
             self.chatbot.train(c)
+        print("Training End!")
+
+    def __processResponse(self,response):
+        import re
+        for p in re.findall("(<[^<>]*>)", response):
+            print(p)
+            response = response.replace(p,self.chatbot.question.getInformation(p))
+        return response
+
+
