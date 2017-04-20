@@ -6,6 +6,7 @@ def checkPlaceHolders(line):
         if p not in placeHolders:
             print("*****Undefined placeholder*****",p)
 
+
 def importConversations(filePath):
     # Conversations
     conversations = []
@@ -34,5 +35,15 @@ def multiplyConversation(con):
         variations = []
         for name in INFO.PEOPLE.keys():
             variations.append([question.replace(INFO.Q_NAME,name),con[1]])
+        return variations
+    if question.find(INFO.Q_COURSE_NAME) != -1:
+        variations = []
+        for name in INFO.COURSES.keys():
+            variations.append([question.replace(INFO.Q_COURSE_NAME, name), con[1]])
+        return variations
+    if question.find(INFO.Q_COURSE_CODE) != -1:
+        variations = []
+        for name in [INFO.COURSES[x]["code"] for x in INFO.COURSES.keys()]:
+            variations.append([question.replace(INFO.Q_COURSE_CODE, name), con[1]])
         return variations
     return [con]

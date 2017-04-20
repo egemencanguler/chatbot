@@ -12,6 +12,7 @@ class DataBase:
         from pymongo import MongoClient
         self.client = MongoClient()
         self.tr_vectors = self.client.tr_vectors.tr_vectors
+        self.tr_sentence = self.client.tr_sentence
         pass
 
     def insertVector(self,word,vector):
@@ -23,6 +24,7 @@ class DataBase:
         if data == None:
             return None
         return data["vec"]
+
 
 
 

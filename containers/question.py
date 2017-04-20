@@ -18,8 +18,6 @@ class Question:
         self.cleanTokenized = self.__tokenize(self.clean)
         self.withPlaceHolders = self.__replacePlaceHolders(self.clean)
         self.withPlaceHoldersTokenized = self.__tokenize(self.withPlaceHolders)
-        self.__extractInformation()
-
 
 
     def putInformation(self,key,info):
@@ -66,7 +64,7 @@ class Question:
     def getName(self):
         from difflib import SequenceMatcher
         import chatterbot.comparisons
-        similarity = 0
+        similarity = -1
         name = None
         for n in INFO.PEOPLE.keys():
             sim = SequenceMatcher(
@@ -80,7 +78,32 @@ class Question:
                 similarity = percent
         return name
 
-    def __extractInformation(self):
+
+    def getCourseName(self):
+        from difflib import SequenceMatcher
+        match = re.search(r"(([a-zA-Z]{3}) ?\d{3})",self.raw)
+        if match is not None:
+            code = match.group(1).replace(" ","").lower()
+            for key,val in INFO.COURSES.items():
+                if val["code"].find(code) != -1:
+                    return key
+        import chatterbot.comparisons
+        similarity = -1
+        name = None
+        for n in INFO.COURSES.keys():
+            sim = SequenceMatcher(
+                None,
+                n,
+                self.clean
+            )
+            percent = round(sim.ratio(), 2)
+            if percent > similarity:
+                name = n
+                similarity = percent
+        return name
+
+    def extractInformation(self):
+        #People
         name = self.getName()
         self.information[INFO.Q_NAME] = self.getName()
         self.information[INFO.A_OFFICE] = INFO.PEOPLE[name]["office"]
@@ -88,5 +111,12 @@ class Question:
         self.information[INFO.A_TEL] = INFO.PEOPLE[name]["tel"]
         self.information[INFO.A_RESEARCH_AREAS] = INFO.PEOPLE[name]["research"]
         self.information[INFO.A_WEBSITE] = INFO.PEOPLE[name]["website"]
+        #Location
         if INFO.Q_CLASSROOM in self.information:
             self.information[INFO.A_CLASSROOM_LOC] = INFO.LOCATIONS[self.information[INFO.Q_CLASSROOM]]
+        #Course
+        courseName = self.getCourseName()
+        self.information[INFO.A_COURSE_NAME] = courseName
+        self.information[INFO.A_COURSE_CODE] = INFO.COURSES[courseName]["code"]
+        self.information[INFO.A_COURSE_CREDIT] = INFO.COURSES[courseName]["credit"]
+        self.information[INFO.A_COURSE_INFO] = INFO.COURSES[courseName]["info"]

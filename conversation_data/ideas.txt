@@ -1,7 +1,13 @@
-Öğretmenlerin odası, mail adresleri, haklarında bilgi
 Dersler hakkında bilgi, kredisi labı varmı, kısa açıklaması
 1. dönem dersleri neler, seçmeli dersler neler
 Bölüm kodu
 erasmus kordinatörü kim, bölüm başkanı kim
 staj
-ders saati
+ders saati ... dersi ne zaman
+dersi hangi derslikte
+1. dönem dersleri neler
+seçmeli dersler neler
+yemekte ne var
+en son otobüs ne zaman
+ab ofisi nerede
+dekanlık nerede

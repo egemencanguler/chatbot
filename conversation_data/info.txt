@@ -1,340 +1,390 @@
-Burçak ASAL
-E-Posta :
-basal[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7518
-Ofis :
-122
-Web Sitesi :
---
-Araştırma Alanları : --
+BBM101 Programlamaya Giriş I (3 0 3 )
 
-Emre AYDOĞAN
-E-Posta :
-emreaydogan[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7516
-Ofis :
-Z06
-Web Sitesi :
-http://web.cs.hacettepe.edu.tr/~emreaydogan/
-Araştırma Alanları : Kötücül Yazılım Analizi, Bilgi Güvenliği, Evrimsel Hesaplama
+ syllabus
+Bilgisayar programlamada temel kavramlar. Problem biçimselleştirme ve adımsal geliştirme yöntemiyle algoritma ve akış şemalarını geliştirme. Yapısal programlamayla ilgili temel kavramlar. Veri türleri ve değişken tanımlamaları. Temel kontrol yapıları. Şartlı dallanma ve döngüsel yapılar. İşlev kavramı ve işlevleri çağırma. Programlama dillerinde tek ve çok boyutlu diziler. Kütük işlemleri. Göstericiler.
 
-Öner BARUT
-E-Posta :
-onerbarut[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7518
-Ofis :
-122
-Web Sitesi :
---
-Araştırma Alanları : Computer Graphics, Crowd Simulation, GPGPU
+BBM103 Programlamaya Giriş Laboratuvarı I (0 2 1 )
 
-Çağdaş BAŞ
-E-Posta :
-cagdasbas[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7499
-Ofis :
-Z03
-Web Sitesi :
-http://web.cs.hacettepe.edu.tr/~cagdasbas/
-Araştırma Alanları : Bilgisayarlı Görü, Makine Öğrenmesi
+ syllabus
+Laboratuvar dersi üç ya da daha fazla sayıda deneysel ödev içermektedir. Öğrencilerden ödevleriyle birlikte iyi tasarlanmış raporlar sunmaları beklenmektedir. Derleyici kullanımı, paket programlar ve güncel yazılım geliştirme ortamlarının kullanımı bu dersin birer parçası durumundadır.
 
-Abdurrahman BAYRAK
-E-Posta :
-abayrak[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7512
-Ofis :
-Z07
-Web Sitesi :
-linked-in
-Araştırma Alanları : Robotik, Modern Konrtol Teorisi, İHA Rota Planlama, Mantıksal Tasarım, FPGA Tasarımı, VHDL, Paralel Programlama
+BBM102 Programlamaya Giriş II (3 0 3 )
 
-Dr. Ahmet Selman BOZKIR
-E-Posta :
-selman[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7527
-Ofis :
-222
-Web Sitesi :
-http://www.ahmetselman.com/
-Araştırma Alanları : Similarity, Information Retrieval, Machine Learning, Decision Support Systems, Computer Vision
+ syllabus
+Nesneye yönelik programlamanın temel kavramları. Nesneye yönelik programlama dillerini öğrenmeye giriş. Sınıf, nesne, sarmalama, kalıtım, çok-biçimlilik, soyut sınıf ve arayüz. Erişim denetleyiciler ve iletiler. Hata yönetme kavramları.
 
-Necva BÖLÜCÜ
-E-Posta :
-necva[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7511
-Ofis :
-121
-Web Sitesi :
---
-Araştırma Alanları : Doğal Dil İşleme
+BBM104 Programlamaya Giriş Laboratuvarı II (0 2 1 )
 
-Pelin CANBAY
-E-Posta :
-pelin[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7527
-Ofis :
-222
-Web Sitesi :
---
-Araştırma Alanları : Doğal Dil İşleme, Veri Mahremiyeti, Mahremiyet Koruma, Bilgi Çıkarımı
+ syllabus
+Laboratuvar dersi üç ya da daha fazla sayıda deneysel ödev içermektedir. Öğrencilerden ödevleriyle birlikte iyi tasarlanmış raporlar sunmaları beklenmektedir. Derleyici kullanımı, paket programlar ve güncel yazılım geliştirme ortamlarının kullanımı bu dersin birer parçası durumundadır.
 
-Ali ÇAĞLAYAN
-E-Posta :
-alicaglayan[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7504
-Ofis :
-226
-Web Sitesi :
---
-Araştırma Alanları : Computer Vision, Machine Learning, Deep Learning, Object Recognation
+BBM201 Veri Yapıları (3 0 3 )
 
-Selma DİLEK
-E-Posta :
-selma[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7511
-Ofis :
-121
-Web Sitesi :
-https://www.linkedin.com/in/selmadilek
-Araştırma Alanları : Wireless Sensor Networks, Algorithm Design, Digital Logic Design, Robotics, Artificial Intelligence
+ syllabus
+Veri yapılarının temelleri. Veri temsilleri arasındaki ilişkiler, algoritma tasarımı ve program verimliliği. Listeler, yığıtlar, kuyruklar, ağaçlar, öncelik kuyrukları, anahtarlama, çizgeler. Çok boyutlu/üçgensel/bant/matris gösterimleri. Tekil ve ikili dairesel bağlı listeler. Önde/arada/sonda deyimler.
 
-Bahar GEZİCİ
-E-Posta :
-bahargezici[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7511
-Ofis :
-121
-Web Sitesi :
---
-Araştırma Alanları : --
+BBM205 Kesikli Matematiksel Yapılar (3 0 3 )
 
-Tuğba GÜRGEN ERDOĞAN
-E-Posta :
-tugba[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7512
-Ofis :
-Z07
-Web Sitesi :
---
-Araştırma Alanları : --
+ syllabus
+Kesikli matematik üzerine temel kavramlar: Matematiksel mantık, küme teorisi, ilişkiler ve işlevler. Önermeler mantığı, birinci düzey mantık ve matematiksel tümevarım. Kesikli yapılar: modüler aritmetik, durum makineleri, çizge teorisi, ağaçlar, sayma, özyineleme ve özyineli ilişkiler. Kesikli olasılık teorisi.
 
-Handan GÜRSOY
-E-Posta :
-hgursoy[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7512
-Ofis :
-Z07
-Web Sitesi :
---
-Araştırma Alanları : --
+BBM233 Mantıksal Tasarım Laboratuvarı (0 2 1)
 
-Gültekin IŞIK
-E-Posta :
-gultekin[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7512
-Ofis :
-Z07
-Web Sitesi :
-http://tekinonlayn.github.io
-Araştırma Alanları : Makine Öğrenmesi, Konuşma Tanıma
+ syllabus
+Laboratuvar dersi aşağıda listesi verilen konular üzerinde uygulamalı ödevler içermektedir: Mantıksal kapılar, tümleşik devreler, Bool cebirinin özellikleri ve kuralları, birleşimli devreler, Bool işlevlerinin enküçüklemesi. Kod çeviriciler, çoklayıcılar, büyüklük karşılaştırıcı ve koşut toplayıcı devreler. İki durumlular ve sıralı devreler. Sayaçlar, yazmaçlar, seri toplayıcı devreler ve bellek elemanları.
 
-Işıl KARABEY
-E-Posta :
-isilkarabey@cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7524
-Ofis :
-Z06
-Web Sitesi :
-linked-in
-Araştırma Alanları : Information Security, Cryptography, Cloud Computing, Indoor Localization, Android Mobile App Development
+BBM231 Mantıksal Tasarım (3 0 3 )
 
-Levent KARACAN
-E-Posta :
-karacan[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7517
-Ofis :
-Z03
-Web Sitesi :
---
-Araştırma Alanları : --
+ syllabus
+Sayısal sistemler, sayı sistemleri, ikili kodlar, hata tespit ve hata düzeltme kodları, Bool cebiri, anahtarlamalı cebir, ikili operasyonlar ve Bool işlevleri. Bool işlevlerinin minimizasyonu. Toplamsal mantık, mantık kapıları, toplamsal devrelerin minimizasyonu, mantık kapılarıyla devre tasarımı. Tümleşim devreler, MSO çipsetleriyle tasarım, ROM, PLA. Eşzamanlı sıralı devreler, bellek elemanları, analiz ve tasarım prosedürleri. Yazmaçlar, sayaçlar, RAM. Zaman uyumsuz sıralı devreler.
 
-Dr. Aydın KAYA
-E-Posta :
-aydinkaya[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7509
-Ofis :
-225
-Web Sitesi :
---
-Araştırma Alanları : --
+BBM203 Yazılım Laboratuvarı I (0 2 1 )
 
-Dr. Ali Seydi KEÇELİ
-E-Posta :
-aliseydi[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7509
-Ofis :
-225
-Web Sitesi :
---
-Araştırma Alanları : Computer Vision, Data Mining, Medical Image Analysis
+ syllabus
+Laboratuvar dersi üç ya da daha fazla sayıda deneysel ödev içermektedir. Öğrencilerden ödevleriyle birlikte iyi tasarlanmış raporlar sunmaları beklenmektedir. Derleyici kullanımı, paket programlar ve güncel yazılım geliştirme ortamlarının kullanımı bu dersin birer parçası durumundadır.
 
-Feyza Nur KILIÇASLAN
-E-Posta :
-feyzanur[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7511
-Ofis :
-121
-Web Sitesi :
---
-Araştırma Alanları : Yazılım Mühendisliği, Yazılım Kalite Yönetimi, Yazılım Metrikleri
+BBM202 Algoritmalar (3 0 3)
 
-Aysun KOÇAK
-E-Posta :
-aysunkocak[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7517
-Ofis :
-Z03
-Web Sitesi :
---
-Araştırma Alanları : Computer Vision, Machine Learning
+ syllabus
+Algoritmalarla ilgili temel kavramlar. Asimtotik gösterim, başarım ölçütleri, alan/zaman karmaşıklığı. Özyinelemeli algoritmalar, özyineli ilişkiler, algoritma çözümleme kavramına giriş. İkili arama ağacı, tekrarlı ve özyineli ikili ağaç tarama. Çizgeler, önce derinlik, önce genişlik tabanlı arama, yayılım ağaçları, en kısa yol problem, kenar/ayrıt ağları üzerinde işlemler. Seçimli, eklemeleri, kabarcık, sayma tabanlı, hızlı, toplamsal, yığın ve radiks sıralama algoritmaları ve çözümlemeleri.
 
-Cumhur Yiğit ÖZCAN
-E-Posta :
-cumhuryigitozcan[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7518
-Ofis :
-122
-Web Sitesi :
-linked-in
-Araştırma Alanları : Bilgisayar Grafiği, Kalabalık Benzetimi, Kalabalık Gezinim Yöntemleri
+BBM234 Bilgisayar Yapısı (3 0 3 )
 
-Ali Osman SERHATOĞLU
-E-Posta :
-aoserhatoglu[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7504
-Ofis :
-226
-Web Sitesi :
---
-Araştırma Alanları : NLP, Information Extraction, Machine Learning
+ syllabus
+Bilgisayar mimarisine ilişkin temel matematiksel ve mantıksal kavramlar. Veri temsili. Temel bilgisayar yapısı. Merkezi işlemci yapılanması: Akümülator-tabanlı, genel yazmaç tabanlı işlemciler ve yığıt makinesi mimarileri. Makine kod komut kavramları, mikro programlama kavramı, adresleme biçimleri. Bellek yapısı. Büyük depolama aygıtları. Giriş/çıkış birimleri. Sembolik programlamaya giriş.
 
-Efsun SEZER
-E-Posta :
-efsunsezer[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7516
-Ofis :
-Z06
-Web Sitesi :
---
-Araştırma Alanları : Computer Vision, Machine Learning
+BBM204 Yazılım Laboratuvarı II (0 2 1 )
 
-Yasin ŞAHİN
-E-Posta :
-yasin[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7504
-Ofis :
-226
-Web Sitesi :
-linked-in
-Araştırma Alanları : --
+ syllabus
+Laboratuvar dersi üç ya da daha fazla sayıda deneysel ödev içermektedir. Öğrencilerden ödevleriyle birlikte iyi tasarlanmış raporlar sunmaları beklenmektedir. Derleyici kullanımı, paket programlar ve güncel yazılım geliştirme ortamlarının kullanımı bu dersin birer parçası durumundadır.
 
-Hüseyin TEMUÇİN
-E-Posta :
-htemucin[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7505
-Ofis :
-225
-Web Sitesi :
---
-Araştırma Alanları : --
+BBM371 Veri Yönetimi (3 0 3 )
 
-Alaettin UÇAN
-E-Posta :
-aucan[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7527
-Ofis :
-222
-Web Sitesi :
-https://tr.linkedin.com/in/alaettin-ucan
-Araştırma Alanları : Sentiment Analysis, Text Analysis, Text Mining, Information Retrieval, Smart Environments
+ syllabus
+Temel kütük kavramları. İkincil depolama araçları ve fiziksel kütük organizasyonu. Kütük yönetim dizgeleri ve türleri. Temel kütük işleme operasyonları. Dizinler ve türleri. Anahtarlı dizinleme ve türleri. Ağaç yapısındaki dizinler. Sıralama. Uzamsal ve çok boyutlu dizinleme yapıları. Katlanmış dizinler.
 
-Burcu YALÇINER
-E-Posta :
-burcuyalciner[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7511
-Ofis :
-121
-Web Sitesi :
---
-Araştırma Alanları : --
+BBM301 Programlama Dilleri (3 0 3 )
 
-Yalın YALIÇ
-E-Posta :
-yalinyalic[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7505
-Ofis :
-225
-Web Sitesi :
---
-Araştırma Alanları : --
+ syllabus
+Programlama dillerindeki temel prensipler ve paradigmalar. Tüm ana konular ve dil paradigmaları kapsanmaktadır. Sözdizim, anlam, adlar, atamalar, tür kontrolü, alt programlar, anlamsal ve sözdizimsel çözümleyiciler, soyut veri türleri, tutarlılık, hata yönetimi. Buyurgan ve işlevsel diller için farklı tasarım seçenekleri ile anlamsal ve sözdizimsel çözümleyicilerin tasarımı.
 
-Nebi YILMAZ
-E-Posta :
-yilmaz[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7511
-Ofis :
-121
-Web Sitesi :
---
-Araştırma Alanları : --
+BBM341 Sistem Programlama (3 0 3 )
 
-Selim YILMAZ
-E-Posta :
-selimy[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7524
-Ofis :
-Z06
-Web Sitesi :
---
-Araştırma Alanları : --
+ syllabus
+Sembolik dilin genel kavramları. Kaynak ve hedef program. Re-entrant ve tekrar çalıştırılabilir programlar. Adresleme teknikleri. Yordam tanımlamaları, yordam iletişim teknikleri, macro olanakları, İşletim sistemi- sembolik dil bağlantısı: Sistem çağrıları. Sistem çağrı mekanizması, giriş/çıkış arayüzleri. Yükleyiciler, bağlayıcılar. Mikro programlama. Tek ve çift geçişli birleştiriciler. Kesme mekanizması, kesme yönetimi. Temel I/O programlama teknikleri. Zamanlanmış ve kesmeye dayalı I/O programlama. Doğrudan bellek erişimi. Gömülü sistem I/O programlama örnekleri. Aygıt sürücüleri: Aygıt türleri, karakter aygıt sürücüleri ve örnekler, blok aygıt sürücüleri.
 
-Cemil ZALLUHOĞLU
-E-Posta :
-cemil[at]cs.hacettepe.edu.tr
-Tel :
-(0312) 780 7522
-Ofis :
-Z03
-Web Sitesi :
-http://web.cs.hacettepe.edu.tr/~cemil/
-Araştırma Alanları : Computer Vision, Deep Learning, Crowd Analysis, Human Activity Recognition
+BBM342 İşletim Sistemleri (3 0 3 )
+
+ syllabus
+İşletim sisteminin tanımı. Görev, süreç, toplu ve etkileşimli işleme, çoklu-görev ve gerçek-zamanlı işleme kavramları. Süreçler, bağlam ve görev değişimi, UNIX süreç durumu ve kuyruk çizenekleri, süreçlerin yönetim algoritmaları. İzlekler. Eş zamanlı süreçler. Süreçler arası iletişim, zaman-uyumlama, karşılıklı kaynak paylaşımı. Alt düzeyde zaman-uyumlama operasyonları ve semaforlar. Üst düzey zaman-uyumlama işlevleri. UNIX iletişim kanalları ve FIFOs. Kilitlenmeler. Bellek yönetimi: Tekil ve sürekli durağan bölümlemeli bellekler, değişim, sayfalama, bölütleme, sanal bellek. Kütük yönetimi: Dizin yapıları. FAT, i-node yapıları, kütük yerleşimi yöntemleri, güvenlik ve koruma. Dağıtık işleme, TCP/IP, istemci sunucu paradigması, soket programlama.
+
+BBM382 Yazılım Mühendisliği (3 0 3 )
+
+ syllabus
+Yazılım mühendisliğinin temel kavramları. Bilgisayar sistemlerinin türleri ve bir parçası olarak yazılım. Yazılım mühendisliğinden sistem mühendisliğine uzanan ilişki. Yazılım mühendisliğinin kapsamı: Yazılım geliştirme (çözümleme, tasarım, kodlama ve sınama), yazılım mühendisliği yönetimi, yazılım yapılandırma yönetimi, yazılım mühendisliği süreçleri, araçları, yöntemleri ve kalite güvencesi. Yazılım ölçütleri ve maliyet kestirimi. Yazılım kalite maliyeti. Yazılım geliştirme süreç modelleri ve süreç referans modelleri.
+
+BBM427 Teknoloji Seminerleri I (0 1 0)
+
+ syllabus
+Öğrenci, bölüm sorumluları tarafından düzenlenecek bir dizi teknoloji seminerine katılmak zorundadır. Seminerlerin konusu mevcut teknoloji gündemine göre belirlenir. Seminerleri sunanlar bölümün içinden ya da dışından olacaktır.
+
+BBM428 Teknoloji Seminerleri II (0 1 0)
+
+ syllabus
+Öğrenci, bölüm sorumluları tarafından düzenlenecek bir dizi teknoloji seminerine katılmak zorundadır. Seminerlerin konusu mevcut teknoloji gündemine göre belirlenir. Seminerleri sunanlar bölümün içinden ya da dışından olabilir.
+
+BBM471 Veritabanı Yönetim Sistemleri (3 0 3 )
+
+ syllabus
+Veritabanı, veritabanı yönetim sistemleri, veritabanı yapısı, şemalar ve veri bağımsızlığı. Veri modelleri: Varlık-bağıntı modeli ve ilişkisel model. Bütünlük kısıtları ve ilişkisel tasarım: Alan kısıtları, referans kısıtları, nitelikler arası bağımlılıklar, normal biçimler, tasarım kriterleri. İlişkisel diller: İlişkisel cebir. SQL standard ilişkisel dili: veri tanımı, veri değişimi, veritabanı yönetim yöntemleri ve temel komutlar.Hareketler. Eşzamanlılık kontrolü ve serileştirme. Gerikazanım mekanizmaları.
+
+BBM472 Mekansal Bilgi Sistemleri (3 0 3 )
+
+ syllabus
+Mekansal bilgi sistemlerininin bilimsel alanlarda ve karar vermede kullanımı. Mekansal bilgiye dayalı uygulamalar, mekansal gerçekçiliği modelleme, uzamsal veri derlemleri, mekansal veritabanları, mekansal çözümleme, kesinlik ve belirsizlik. Mekansal bilgi sistemlerinin yasal, ekonomik ve etik konular ile ilişkilendirilmesi, uydu tabanlı uzaktan algılama, akıllı taşıma sistemleri ve diğer mekansal bilgi sistemleri.
+
+BBM473 Veritabanı Laboratuvarı (0 2 1 )
+
+ syllabus
+Gelişmiş veritabanı yönetim sistemleri, veri tabanı tanımı, veritabanlarında sorgu ve uygulama geliştirme. Veritabanı teknolojileri üzerine araştırma ve sunum, yedekleme ve onarım, popüler veritabanı sistemleri
+
+BBM474 Coğrafik Bilgi Dizgeleri Laboratuvarı (0 2 1)
+
+ syllabus
+Coğrafik bilgi dizgelerinin kavramları, CBD uygulamalarının girdileri, CBD uyumu, popüler coğrafik bilgi dizge araçlarının kullanımı, probleme özgü CBD veri yapıları, yeni jeo-uzamsal veri türlerinin oluşturulması, ayrıt tabanlı uzaklık işlevlerinin çözümlenmesi, jeo-uzamsal veritabanlarının tasarımı ve gerçekleştirimi, iyi bilinen CBD çözümleri
+
+BBM475 Yönetim Bilişim Dizgeleri (3 0 3 )
+
+ syllabus
+Bilişim dizgelerinin temel kavramları, dizge teorisi, yönetimsel bilişim, bilişimin organizasyonlarda kavramsal modelleri, karar destek dizgeleri, kurumsal kaynak planlama dizgeleri, bilişim dizgesi projeleri için bilişim dizgeleri planlaması, bilişim sistemleri hayat döngüsü modelleri, bakım ilkeleri, yönetim ve denetim, bilişim dizgelerinim geliştirim, gerçekleştirim ve yönetimi.
+
+BBM481 Yazılım Geliştirme (3 0 3 )
+
+ syllabus
+Yazılım geliştirmenin temel aşamaları. Nesneye yönelik analiz, tasarım kavramları ve Birleşik Modelleme Dili (UML). UML görünümleri ve diyagramları. Kullanım durumu, etkinlik, durum, bileşen ve yerleşim diyagramları. Nesneye yönelik geliştirme süreçleri ve önerilen UML diyagramlarının kullanımı. Yazılım sistemlerinin örnek çözümlemeleri.
+
+BBM482 Yazılım Kalite Güvence (3 0 3 )
+
+ syllabus
+Yazılım geliştirme yaşam döngüsü ile yazılım kalite güvencenin temel kavramlarını sunar. Yazılım doğrulama ve geçerleme kavramları. Hata tanımı ve türleri. Yazılım doğrulama, geçerleme yöntemleri ve standartları. Yazılım gözden geçirme ve denetleme. Yazılım kalitesini ölçme için kullanılan metrikler. Yazılım test seviyeleri ve yöntemleri. İşlevsel ve yapısal test. Tümleştirme ve sistem testleri. Nesneye yönelik test.
+
+BBM483 Yazılım Geliştirme Laboratuvarı (0 2 1)
+
+ syllabus
+Yazılım geliştirmenin temel adımlarına yönelik örnek çalışma üzerinde, UML kullanılan ödevlerden oluşur. Öğrencilerden ilk olarak kullanım durumu (use-case) analizini gerçekleştirmeleri beklenir. Ardından öğrenciler analiz ve tasarım çıktılarına dayanarak nesneye yönelik programlama uygulamaları ile sistemi gerçekleştirir.
+
+BBM484 Yazılım Kalite Güvence Laboratuvarı (0 2 1)
+
+ syllabus
+Orta ölçekli yazılım sistemlerinde yazılım kalite güvencenin temel yöntemleri için uygulama yapmayı sağlar. Öğrencilere çalışan yazılım sistemleri atanır ve öğrencilerden genelde kabul görmüş yazılım test yöntemlerini kullanarak test tasarlama ve çalıştırmaları beklenir. Kod gözden geçirmesi kalite güvencenin bir parçası olarak uygulanır. Öğrenciler tasarım ve yazılım kalite güvence etkinliklerinin çıktılarını raporlar ve bu etkinlikleri gerçekleştirmenin maliyet ve faydalarını değerlendirerek rapora ekler.
+
+BBM485 Yazılım Mimarileri (3 0 3 )
+
+ syllabus
+Yazılım mimarilerin temel kavramlarından bahseder. Yazılım mimari kavramları ve paydaşlar, yazılım mimarisi geliştirme süreci, mimari gereksinim analizi, yazılım mimari tasarımının modellenmesi başlıca konularıdır. Mimari görünümler ve perspektifler. İşlevsel, Bilgi, Geliştirme, Eş-zamanlı, Yayılıma ve İşletim görünümleri. Evrim, güvenilirlik, performans ve ölçeklenebilirlik, erişilebilirlik ve esneklik perspektifleri. Mimari stiller ve örüntüler. Mimari tasarım yöntemlerinin karşılaştırılması ve değerlendirilmesi. Yazılım ürün hattı mimarileri, alan modelleme ve alan mühendisliği.
+
+BBM486 Tasarım Örüntüleri (3 0 3 )
+
+ syllabus
+Nesneye yönelik yazılım geliştirme sınırları içinde tasarım örüntülerini kapsar. Ders içeriği tasarım örüntülerinin faydaları, amaçları, ilkeleri; nesneye yönelik tasarımın ilkeleri; örüntü sınıflamalarını; tüm tasarım örüntülerinin, anti-örüntülerin, mimari örüntülerin incelenmesi ve önerkler içinde uygulanmasını kapsar.
+
+BBM487 Yazılım Mühendisliği Laboratuvarı (0 2 1)
+
+ syllabus
+Orta ölçekli bir yazılım uygulamasının yönetim ve geliştirme pratiklerini içeren mühendisliği. Yazılım projelerinin başlangıç gereksinimlerinin anlaşılması ve geliştirmelerin planlanması. Önceden tanımlanmış (Open Unified Process’i temel alan) yazılım geliştirme yaşam döngüsü içinde projelerin gereksinim analizi, mimari tasarımı ve detaylı tasarımı ve bu etkinliklerin çıktılarının (IEEE tarafından önerilen) belirli biçimlerde belgelendirilmesi. Laboratuvarın sonunda öğrenciler, bazı kritik gereksinimleri kodlanmış yazılım mimarisinin çalışan bir prototipini sunmalıdır. Yazılım tasarımı ve gerçekleştirimi boyunca J2EE teknolojilerinin kullanımı beklenmektedir.
+
+BBM488 Web Servisleri Laboratuvarı (0 2 1)
+
+ syllabus
+Genişletilmiş İşaret Dili (XML), web servisleri, Servise Yönelik Mimari (SOA) ve İş Süreçleri Yönetimi (BPM) gibi web teknolojileri üzerine deneyler. SOA ve BPM kavramlarına temel olarak XML ve web servisleri. SOA and BPM kavramlarının niçin ve ne zaman kullanılacağının ödevler ve dönem projeleri ile öğretimi.
+
+BBM490 Web Mimarisinin Temelleri (3 0 3)
+
+ syllabus
+İnternet ve istemci/sunucu tabanlı teknolojiler. Ölçeklenebilir, güvenli ve sürdürülebilir Web uygulamaları tasarlama ve geliştirme. İnternet tabanlı bilgi sistemleri, web tarayıcıları ve sunucuları, istemci ve sunucu tabanlı betik dilleri, JEE Web teknolojileri, servletler, JSPs, populer çatılar, JDBC, Hibernate, JTA, GWT, JSF, mimari ağırlıklı tasarım örüntüleri, bağımlılık enjeksyonu, spring, uygulama sunucuları.
+
+BBM491 Kişisel Yazılım Süreci (3 0 3 )
+
+ syllabus
+Bireysel yazılım geliştirmeye yol gösteren disiplini getiren Kişisel Yazılım Sürecinin (“Personal Software Porcess – PSP”) temel prensipleri. Öğrenciler güncel programlama uygulamalarını kullandıkları PSP0 süreci ile başlar. PSP süreci öğrencilerin her PSP versiyonunda 1 ya da 2 program yazdıkları 4 süreç versiyonu ile geliştirilmiştir. Öğrenciler geliştirdikleri her program için, ilgili süreç versiyonuna ek olarak önceki versiyonlarda öğrenilen yöntemleri de kullanırlar. Tüm PSP materyalleri daha önceden tanımlanmıştır ve Yazılım Mühendisliği Enstitüsünün resmi web sitesinden erişilebilir. (Ayrıntılı içerik)
+
+BBM492 Takım Yazılım Süreci (3 0 3 )
+
+ syllabus
+Ekip halinde bir yazılım projesini yürütmeye kılavuzluk eden Takım Yazılım Süreci (“Team Software Process – TSPi”)’nin temel prensipleri. Küçük bir yazılım ekibi projesinin ihtiyaç duyduğu tüm formlar, betikler ve standartlar. Bir, iki ya da 3 geliştirme döngüsü. İlk döngüde sürecin uygulaması, ikinci döngüde takvim baskısı altında sürecin kullanımı, üçüncü döngüde ise ilk iki döngüde öğrenilenlerin içselleştirilmesi. Tüm TSPi materyalleri önceden tanımlanmıştır ve Yazılım Mühendisliği Enstitüsünün resmi web sitesinde yer almaktadır.
+
+BBM493 Kişisel Yazılım Süreci Laboratuvarı (0 2 1)
+
+ syllabus
+PSP0 ve PSP1 süreçlerini temel alan deneylerin yürütüldüğü Kişisel Yazılım Süreci (Personal Software Process – PSP) dersinin tamamlayıcısı. Önceden tanımlanmış süreç versiyonlarını takip eden ve önceden tanımlanmış çıktıları üreten 6 deneyin gerçekleştirilmesi. Öğrenciler deneyleri gerçekleştirmek için iyi bildikleri herhangi bir programlama dilini kullanabilirler. Laboratuvarın sonunda, önceden tanımlanmış metrikleri kullanarak deneyleri gerçekleştirirken kendi performanslarını değerlendirdikleri bir final raporu hazırlarlar. Tüm laboratuvar materyalleri önceden tanımlanmıştır ve Yazılım Mühendisliği Enstitüsü resmi web sitesinden ulaşılabilir.
+(Ayrıntılı içerik)
+
+BBM494 Takım Yazılım Süreci Laboratuvarı (0 2 1)
+
+ syllabus
+TSPi (Team Softwar Process)’ye uygun olan deneylerin yürütüldüğü Takım Yazılım Süreci dersinin tamamlayıcısıdır. Öğrencilere önceden tanımlanmış roller atanır. Öğrenciler bir yazılım geliştirme projesini önceden tanımlanmış süreci takip ederek ve önceden tanımlanmış çıktıları üreterek bir takım olarak tamamlamak zorundadır. Tüm laboratuvara ait materyallere Yazılım Mühendisliği Enstitüsü resmi web sitesinden erişilebilir.
+
+BBM413 Görüntü İşlemenin Temelleri (3 0 3 )
+
+ syllabus
+Görüntü oluşumu,	Noktasal İşlemler ve histogram işleme, Uzlamsal filtreleme teknikleri,Frekans alanuı teknikleri, Görüntü düzleştirme, Kenar bulma, Görüntü bölütleme
+
+BBM415 Görüntü İşleme Laboratuvarı (0 2 1 )
+
+ syllabus
+Görüntü oluşumu, Noktasal İşlemler ve histogram işleme, Uzlamsal filtreleme teknikleri, Frekans alanı teknikleri, Görüntü düzleştirme, Kenar bulma, Görüntü bölütleme
+
+BBM421 Oyun Teknolojileri (3 0 3 )
+
+ syllabus  syllabus
+Oyun teknolojilerine genel bakış ve oyun üretme sürecinin öğrenilmesi.
+
+BBM423 Oyun Teknolojileri Laboratuvarı (0 2 1 )
+
+ syllabus
+Oyun teknolojilerine genel bakış ve oyun üretme sürecinin öğrenilmesi.
+
+BBM451 Bilgisayar Ağları (3 0 3 )
+
+ syllabus
+Yerel ağlar, Telli ve Telsiz Yerel Ağlar; Yineleyeci, Köprü ve Anahtar, Yönlendiriciler, Sanal Ağlar; Geniş Ağ Teknolojileri; TCP/IP Protokolu; IP Adresi Planlama; Yerel ve Geniş Ağ Tasarımı; TCP, UDP ve IP Katmanlarının İncelenmesi; DHCP; Yayın ve Küme İletişimi.
+
+BBM453 Bilgisayar Ağları Laboratuvarı (0 2 1 )
+
+ syllabus
+Ağ gereçlerini, ağ topolojilerini ve ağ uygulama yazılımlarını deney ortamında kullanma ve ağ kavramlarını pekiştirme.
+
+BBM463 Bilgi Güvenliği (3 0 3 )
+
+ syllabus
+Temel güvenlik ilkeleri, güvenlik tehditleri, güvenlik politikaları, temel şifreleme bilgisi, kullanıcı tanıma/yetkilendirme, program güvenliği, işletim sistemi güvenliği, ağ güvenliğine giriş
+
+BBM463 Bilgi Güvenliği Laboratuvarı (3 0 3 )
+
+ syllabus
+Temel şifreleme işlevleri, disk incelemesi, kod analiz araçları, çok karşılaşılan programlama hataları, web uygulama güvenliği, IPSEC /SSL protokolleri, güvenlik duvarı ayarlama, ağ tarama
+
+BBM467 Veri Yoğunluklu Uygulamalar (3 0 3 )
+
+ syllabus
+Dağıtık hesaplama yaklaşımları, Koşut işlem ve yüksek başarımlı hesaplama mimarileri, Peer-to-peer sistemler, Hesaplama ızgaraları, Sanal makineler ve Internet Bulutları
+
+BBM469 Veri Yoğunluklu Uygulamalar Laboratuvarı (0 2 1 )
+
+ syllabus
+İş parçaları kullanma, koşut programlama, peer-to-peer ağlarda hesaplama, hesaplama ızgaraları, bulut hesaplama
+
+BBM412 Bilgisayar Grafiği (3 0 3 )
+
+ syllabus
+Bilgisayar grafiğine giriş. Grafik göstericilerin ve donanımlarının çalışma ilkeleri. Nokta-çizim teknikleri, Doğru-çizim teknikleri, iki boyutlu dönüşümler. Pencere teknikleri. Üç boyutlu grafiğe giriş ve dönüşüm teknikleri. Gölgeleme. Etkileşimli grafik donanımı ve yazılımları.
+
+BBM414 Bilgisayar Grafiği Laboratuvarı (0 2 1 )
+
+ syllabus
+Bilgisayar grafiğine giriş. Grafik göstericilerin ve donanımlarının çalışma ilkeleri. Nokta-çizim teknikleri, Doğru-çizim teknikleri, iki boyutlu dönüşümler. Pencere teknikleri. Üç boyutlu grafiğe giriş ve dönüşüm teknikleri. Gölgeleme. Etkileşimli grafik donanımı ve yazılımları.
+
+BBM416 Bilgisayarlı Görünün Temelleri (3 0 3 )
+
+ syllabus
+Görüntü oluşum fiziği, görüntü temsili, geometrik dönüşümler, ikili görüntü analizi, nokta ve nokta bulutu işleme, filtreler, konvolüsyon, kenar algılama, doku analizi ve sentezi, renk uzayları ve renk modelleri, değişimsiz görüntü özellikleri, optik akış, temel eşleştirme teknikleri.
+
+BBM418 Bilgisayarlı Görünün Temelleri Laboratuvarı (0 2 1 )
+
+ syllabus
+Görüntü oluşum fiziği, görüntü temsili, geometrik dönüşümler, ikili görüntü analizi, nokta ve nokta bulutu işleme, filtreler, konvolüsyon, kenar algılama, doku analizi ve sentezi, renk uzayları ve renk modelleri, değişimsiz görüntü özellikleri, optik akış, temel eşleştirme teknikleri.
+
+BBM422 Hareketli Hesaplama (3 0 3 )
+
+ syllabus
+Hareketli ve kablosuz teknolojilere giriş,	Modern dağıtık sistemlerin tasarımı, Hareketli uygulama geliştirme teknolojiler, Üst seviye katmanları hizmet veren modern ağlardaki yöntem ve mimariler, Planlama, hareketlim sistemlerde yönetim ve güvenlik, Hareketli sistemler için oyun tasarımı.
+
+BBM424 Hareketli Hesaplama Laboratuvarı (0 2 1 )
+
+ syllabus
+Hareketli ve kablosuz teknolojilere giriş,	Modern dağıtık sistemlerin tasarımı, Hareketli uygulama geliştirme teknolojiler, Üst seviye katmanları hizmet veren modern ağlardaki yöntem ve mimariler, Planlama, hareketlim sistemlerde yönetim ve güvenlik, Hareketli sistemler için oyun tasarımı.
+
+BBM432 Gömülü Sistemler (3 0 3 )
+
+ syllabus
+Mikroişleyiciler, bellek birimleri, giriş/çıkış arabirimleri, yardımcı işleyiciler, giriş/çıkış sürücüleri olarak algılayıcılar, elektromekanik güdüm araçları, mikrodenetleyiciler, gerçek-zamanlı işletim sistemleri, gerçek-zamanlı ve gömülü sistemler için yazılım geliştirme araçları.
+
+BBM434 Gömülü Sistemler Laboratuvarı (0 2 1 )
+
+ syllabus
+Gömülü sistemlerin tasarımına ilişkin prensip ve algoritmalar. Örnek gömülü sistemler, haftalık deneyler.
+
+BBM452 Veri İletişimi (3 0 3 )
+
+ syllabus
+Veri iletişimi temel tanım ve kavramlar; Veri türleri; Katmanlı ağ mimarisinde fiziksel katmana giriş; Örneksel ve sayısal imler ve özellikleri; Modülasyon; Modülasyon teknikleri; Sayısal kodlama; Çoklama; Geri-bildirim denetim allgoritmaları (Idle/Continuous IQ); Veri Bağlantı katmanı protokolları (HDLC, PPP, etc); Telli ve Telsiz Yerel ağlar; Geniş ağ teknolojileri: Frame Relay ve ATM
+
+BBM401 - Özdevinirler Kuramı Ve Biçimsel Diller (3 0 3 )
+
+ syllabus
+Özdevinirler teorisine giriş.Deterministik ve deterministik olmayan sonlu özdevinirler.Düzenli diller ve düzenli deyimler.Düzenli dillerin özellikleri ve düzenli diller için pumping lemma.Bağlamdan-bağımsız diller ve gramerler.Söz-dizim ağaçları.Yığıtlı özdevinirler.Yığıtlı özdevinirler ile bağlamdan-bağımsız gramerler arasındaki ilişki.Bağlamdan-bağımsız dillerin özellikleri ve bağlamdan-bağımsız diller için pumping lemma.Turing makineleri ve hesaplama teorisi.
+
+BBM402 - Hesaplama Kuramı (3 0 3 )
+
+ syllabus
+Özdevinirler teorisi ve biçimsel diller.Biçimsel dillerin özellikleri ve biçimsel diller için pumping lemma.Church-Turing kuramı, Turing makineleri ve hesaplama kuramının modellenmesi.Çözülebilir ve çözülemeyen problemler.Karar verilebilirlik kavramı ve halting problemi.İndirgenebilirlik kavramı ve biçimsel diller teorisinde çözülemeyen problemler.Zaman karmaşıklığının ölçülmesi.P, NP, NP-Completeness kavramları ve Cook-Levin teorimi.
+
+BBM403 - Kombinatorik Ve Çizge Kuramı (3 0 3 )
+
+ syllabus
+Temel kavramlar,Binom katsayıları, kapsama-dışlama kavramı.Çizge kuramında temel kavramlar, Çizge gösterimleri,Erişilebilirlilik, alt çizgeler, Eşbiçimlilik, bitişiklilik, Düzlemlilik, Boyama değeri, Eular çizgesi,Hamilton çizgesi, Çizge uygulamaları
+
+BBM404 - Derleyici Gerçekleştiriminin Temelleri (3 0 3 )
+
+ syllabus
+Derleyicilerin yapıları.Sözcük çözümleme.Sözdizimsel çözümleme.Veri türü denetimi ve sözdizimsel güdümlü çeviri.Ara-kod üretimi, kod üretimi ve kod iyileştirme.Hata yönetimi.
+
+BBM405 - Yapay Anlayışın Temelleri (3 0 3 )
+
+ syllabus
+Problem çözüm teknikleri: Durum uzayı yaklaşımı, problem-indirgeme yaklaşımı, tam kapsamlı arama algoritmaları, sezgisel arama algoritmaları, oyun tabanlı algoritmalar ve oyun ağaçları, mantık programlama ,bilgi temsili ve işleme, yapay zeka sistemlerinde öğrenme, yapay sinir ağları, önermeler mantığında ispat teorisi, birinci-derece yüklem mantığı, Bayes ağları, anlamsal ağlar, bulanık mantık, algılama, robot bilim.
+
+BBM406 - Makine Öğrenmesinin Temelleri (3 0 3 )
+
+ syllabus
+Makine öğrenmesinin temel kavramları ve basit kavram öğrenme algoritmaları.Karar-ağaçları, neron ağları, bayes öğrenmesi, regresyon, destek vektör makineleri ve genetik algoritmalar gibi makine öğrenme algoritmaları.Yönetmeli ve yönetmesiz öğrenme yöntemleri.Özellik seçimi, boyut azaltması ve model seçimi.
+
+BBM407 - Bulanık Mantık (3 0 3 )
+
+ syllabus
+Bulanık mantık sisteminin genel yaklaşımı, bulanık kümeler, ilişkiler ve aritmetik. Olabilirlik ve olasılık kuramları ile bulanık mantık arası ilişkiler. Bulanık çıkarsama sistemleri ve türleri. Bulanık çıkarsamada karma yöntemler. Bulanık kümeleme. Genel uygulama alanlarının incelenmesi: Karar verme, örüntü tanıma, veri tabanı sistemleri, veri madenciliği.
+
+BBM408 - Algoritma Analizi (3 0 3 )
+
+ syllabus
+Asimtotik gösterimler, özyineli ilişkiler, algoritma tasarımda genel teknikler, sıralama ve sıra istatistikleri, greedy/matris algoritmaları, dinamik programlama.
+
+BBM409 - Makine Öğrenmesinin Laboratuvarı (0 2 1 )
+
+ syllabus
+Makine Öğrenmesine Temel Bir Bakış, Doğrusal Regresyon, Küçük Kareler, Makine Öğrenmesi Metodolojisi, Olasılık ve Doğrusal Cebirin Temelleri, İstatistiksel Tahmin: MLE, MAP, Naif Bayes Sınıflandırıcı, Doğrusal Sınıflandırma Modelleri: Lojistik Regresyon, Doğrusal diskriminant fonksiyonu, Perceptron, Destek Vektör Makineleri, Karar Ağacı Öğrenmesi, Kolektif Öğrenme: Bagging, Boosting Clustering, Sinir Ağları, Temel Bileşenler Analizi.
+
+BBM410 - Dinamik Sistemler (3 0 3 )
+
+ syllabus
+Sistemler hakkında temel kavramlar.Durum-uzay gösterimleri.Kesikli ve sürekli zamanlı doğrusal dinamik sistemler.Doğrusal durum denklemleri.Doğrusal ve zamandan bağımsız sistemler.Denge noktaları. Kararlılık.Geri bildirim. Kontrol edilebilirlik. Gözlemlenebilirlik.
+
+BBM429 - Proje I (3 0 3 )
+
+ syllabus
+Bu uygulamalı ders kapsamında, her öğrenciden danışmanlarının gözetiminde bir yazılım veya donanım geliştirmesi beklenmektedir. Donanım projelerinde CAD ve diğer donanım araçları kullanılır. Yazılım projelerinde ise kullanıcı dostu olunması ve yazılım mühendisliği tekniklerinin kullanılması gerekmektedir.
+
+BBM430 - Proje II (3 0 3 )
+
+ syllabus
+Bu uygulamalı ders kapsamında, her öğrenciden danışmanlarının gözetiminde bir yazılım veya donanım geliştirmesi beklenmektedir. Donanım projelerinde CAD ve diğer donanım araçları kullanılır. Yazılım projelerinde ise kullanıcı dostu olunması ve yazılım mühendisliği tekniklerinin kullanılması gerekmektedir.
+
+BBM431 - Gelişmiş Bilgisayar Mimarileri (3 0 3 )
+
+ syllabus
+Bilgisayar mimarilerinde temel konular ve son gelişmeler. Sanal bellek yapıları, bellek mimarileri, önbellekler, komut seti tasarımı, RISC mimarisi, işlemci mikro-mimarisi, üst ölçek mimariler, VLIW makineleri, vector bilgisayarlar, parallel bilgisayarlar.
+
+BBM433 - Mikroişleyiciler (3 0 3 )
+
+ syllabus
+Mikroişleyicili sistemlerde program geliştirmenin irdelenmesi. Mikroişleyicilerde arayüz birimlerinin denetim algoritmalarının geliştirilmesi. Bilgisayar sistemlerinde klavye, görüntü birimi gibi diğer birimler için denetim yazılımı geliştirme. Mikroişleyicilerde bellek ve giriş/çıkış birimleri arabirimleri bağlantıları. Donanım arabirimleri ve uygulamalar için bunların yazılımlarının geliştirilmesi.
+
+BBM436 - Mikroişleyiciler Laboratuvari (3 0 3 )
+
+ syllabus
+Mikroişleyicili sistemlerde program geliştirme. Mikroişleyicilerde arayüz birimlerinin denetim algoritmalarının geliştirilmesi. Bilgisayar sistemlerinde klavye, görüntü birimi gibi diğer birimler için denetim yazılımı geliştirme. Mikroişleyicilerde bellek ve giriş/çıkış birimleri arabirimleri bağlantıları. Donanım arabirimleri ve uygulamalar için bunların yazılımlarının geliştirilmesi.
+
+BBM442 - Koşut İşlem (3 0 3 )
+
+ syllabus
+Koşut mantığa ve koşut programlamaya giriş, koşut bilgisayarlar için ağ topolojileri, GPU?lar, koşut bilgisayar mimarileri (SIMD, Shared Memory MIMD and Distributed Memory MIMD), zaman uyumlama mekanizmaları, koşut programlama modelleri, koşut algoritmaların çözümlenmesi ve tasarımı, farklı mimariler için koşut algoritma geliştirimi, koşut algoritmaların başarım ve karmaşıklığı ve seçilen bazı koşut algoritmarın vaka çalışmaları.
+
+BBM444 - Hesaplamalı Fotografinin Temelleri (3 0 3 )
+
+ syllabus
+Kameralar ve görüntü oluşumu. Renk algısı.Görüntü işleme konu tekrarı.Veriye dayalı görüntü sentezleme.Görüntü düzenleme (bozma, dönüştürme, matlama, harmanlama, birleştirme) .Panoramalar, mozaikler ve kolajlar.Gürültü temizleme.Görüntü tamamlama.Yüksek dinamik aralıklı görüntüleme and ton eşleme.Derinlik and odağı bozma.Görüntü tabanlı ışıklandırma ve görsel gerçekleme.Foto gerçekçi olmayan görsel gerçekleme.
+
+BBM446 - Hesaplamalı Fotografi Laboratuvarı (3 0 3 )
+
+ syllabus
+Kameralar ve görüntü oluşumu .Renk algısı .Görüntü işleme konu tekrarı .Veriye dayalı görüntü sentezleme .Görüntü düzenleme (bozma, dönüştürme, matlama, harmanlama, birleştirme) .Panoramalar, mozaikler ve kolajlar .Gürültü temizleme .Görüntü tamamlama .Yüksek dinamik aralıklı görüntüleme and ton eşleme .Derinlik and odağı bozma .Görüntü tabanlı ışıklandırma ve görsel gerçekleme .Goto gerçekçi olmayan görsel gerçekleme.
+
+BBM456 - Bilgisayar Ve Ağ Güvenliği (3 0 3 )
+
+ syllabus
+Şifreleme, sistem güvenliği, program güvenliği, ağ güvenliği.
+
+BBM461 - Güvenli Programlama (3 0 3 )
+
+ syllabus
+Temel program güvenliği ilkeleri, Kabuk ve işletim sistemi kaynaklı açıklar, Taşırma saldırıları, Girdi hataları, Web güvenliği, Güvenlik çatıları, Kod analizi ve yazılım güvenlik testleri
+
+BBM495 - Doğal Dil İşlemeye Giriş I (3 0 3 )
+
+ syllabus
+Doğal dil işlemeye giriş, Morfolojik analiz, Sözcük türlerinin etiketlenmesi, Ayrıştırma algoritmaları, Anlamsal analiz, Doğal dil işleme uygulama alanları
+
+BBM497 - Doğal Dil İşlemeye Giriş Laboratuvarı (0 2 1 )
+
+ syllabus
+Doğal dil işlemeye giriş, Morfolojik analiz, Sözcük türlerinin etiketlenmesi, Ayrıştırma algoritmaları, Anlamsal analiz, Doğal dil işleme uygulama alanları

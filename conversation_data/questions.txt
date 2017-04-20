@@ -34,6 +34,9 @@ Merhaba, size nasıl yardımcı olabilirim?
 <Name> hocanın mail adresini öğrenebilirmiyim?
 <Mail>
 *
+<Name> maili ne?
+<Mail>
+*
 <Name> hocanın telefon numarasını öğrenebilirmiyim?
 <Tel>
 *
@@ -64,3 +67,42 @@ Bölüm mail adresimi öğrenebilirmiyim?
 <StudentNo>
 Bölüm mailiniz b<StudentNo>@cs.hacettepe.edu.tr
 *
+#Courses with course no#
+<CourseCode> dersi hakkında bilgi alabilirmiyim?
+<CourseInfo>
+*
+<CourseCode> dersi hangi ders?
+<CourseName>
+*
+<CourseCode> dersinin adı ne?
+<CourseName>
+*
+<CourseCode> dersi kaç kredi?
+<CourseCredit>
+*
+#Courses with course Name#
+<CourseName> dersi hakkında bilgi alabilirmiyim?
+<CourseInfo>
+*
+<CourseName> dersinin kodu kaç?
+<CourseCode>
+*
+<CourseName> dersinin kodu ne?
+<CourseCode>
+*
+<CourseName> dersi kaç kredi?
+<CourseCredit>
+*
+#General#
+Saat kaç?
+<Time>
+*
+Bölümün iletişim bilgilerini öğrenebilirmiyim?
+Tel : (+90) 312 297 75 00, Fax : (+90) 312 297 75 02, E-mail : info@cs.hacettepe.edu.tr
+*
+Bölüme nasıl ulaşırım?
+https://www.google.com/maps?ll=39.871106,32.736268&z=17&t=m&hl=en-US&gl=TR&mapclient=embed&cid=15253245872814471554
+*
+
+
+

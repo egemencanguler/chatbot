@@ -10,6 +10,7 @@ class VectorLogicAdapter(LogicAdapter):
         super(VectorLogicAdapter, self).__init__(**kwargs)
         self.db = DataBase()
         self.stemmer = Stemmer()
+        self.cache = {}
 
     def getVector(self,tokens,info):
         vec = [0 for x in range(200)]
@@ -32,12 +33,15 @@ class VectorLogicAdapter(LogicAdapter):
             return 0
         return dot / div
 
+
     def get(self, input_statement):
         """
         Takes a statement string and a list of statement strings.
         Returns the closest matching statement from the list.
         """
+        print("Get Response Statements")
         statement_list = self.chatbot.storage.get_response_statements()
+        print("Get Response Statements End")
 
         if not statement_list:
             if self.chatbot.storage.count():
@@ -56,19 +60,29 @@ class VectorLogicAdapter(LogicAdapter):
         closest_match.confidence = 0
         # Find the closest matching known statement
         questionVector = self.getVector(input_statement.question.cleanTokenized,True)
+        print("Comparing...")
         for statement in statement_list:
             statement.question = Question(statement.text)
             lev1 = Statement(input_statement.question.withPlaceHolders)
             lev2 = Statement(statement.question.withPlaceHolders)
             lev_similarity = comparisons.levenshtein_distance(lev1,lev2)
-            cosine_similarity = self.cosine_similarity(questionVector,self.getVector(statement.question.cleanTokenized,False))
-
+            vec = None
+            # TODO remove hacky implementation of caching, there are better aproaches.
+            if statement.question.clean in self.cache:
+                vec = self.cache[statement.question.clean]
+            else:
+                vec = self.getVector(statement.question.cleanTokenized,False)
+                self.cache[statement.question.clean] = vec
+            cosine_similarity = self.cosine_similarity(questionVector,vec)
+            #normalize
+            cosine_similarity = (cosine_similarity + 1) / 2
             confidence = cosine_similarity
+            #print(statement.text,cosine_similarity,lev_similarity)
             # print(statement.text,cosine_similarity,lev_similarity)
             if confidence > closest_match.confidence:
                 statement.confidence = confidence
                 closest_match = statement
-
+        print("Comparing is done")
         return closest_match
 
     def process(self,input_statement):
@@ -76,6 +90,7 @@ class VectorLogicAdapter(LogicAdapter):
         input_statement.question = self.chatbot.question
 
         # Select the closest match to the input statement
+        print("Selecting closest match")
         closest_match = self.get(input_statement)
         self.logger.info('Using "{}" as a close match to "{}"'.format(
             input_statement.text, closest_match.text
@@ -85,7 +100,6 @@ class VectorLogicAdapter(LogicAdapter):
         response_list = self.chatbot.storage.filter(
             in_response_to__contains=closest_match.text
         )
-
         if response_list:
             self.logger.info(
                 'Selecting response from {} optimal responses.'.format(
@@ -107,3 +121,24 @@ class VectorLogicAdapter(LogicAdapter):
             response.confidence = 0
         print("Confidence",response.confidence)
         return response.confidence, response
+
+#
+# adapter = VectorLogicAdapter()
+# text1 = Question("Yapay Anlayışın Temelleri dersinin kodu")
+# text2 = Question("merhaba")
+# vector1 = adapter.getVector(text1.cleanTokenized,True)
+# vector2 = adapter.getVector(text2.cleanTokenized,True)
+#
+# import numpy as np
+# numvector1 = np.array(vector1)
+# numvector2 = np.array(vector2)
+#
+# print("hohey")
+# from sklearn.metrics.pairwise import cosine_similarity
+#
+# asd = cosine_similarity(numvector1.reshape(1,-1),numvector2.reshape(1,-1))
+# print("Sklearn",asd)
+#
+# import matching.comparison as COMPARE
+# cosine = COMPARE.cosine_similarity(vector1,vector2)
+# print("Mine", cosine)
