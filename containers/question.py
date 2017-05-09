@@ -29,20 +29,6 @@ class Question:
         else:
             return None
 
-    def __replacePlaceHolders(self,text):
-        # Extract information from text and replace common structures
-        for r in regexs:
-            match = re.search(r[0],text)
-            if match:
-                value = None
-                if r[1] == INFO.Q_COURSE_CODE or r[1] == INFO.Q_CLASSROOM:
-                    value = match.group(1) + match.group(2)
-                else:
-                    value = match.group(1)
-                self.putInformation(r[1],value)
-                text = re.sub(r[0],r[1],text)
-        return text
-
     def __tokenize(self,text):
         punctuations = (r"\.", r":", r";", r"\?", ",", "!")
         tokens = []
@@ -52,71 +38,3 @@ class Question:
             text = re.sub(p, " " + p.replace("\\", ""), text)
         tokens += [t for t in re.split(" +", text) if t != ""]
         return tokens
-
-    def show(self):
-        print("Raw:",self.raw)
-        print("Clean:",self.clean)
-        print("CleanTokenized:",self.cleanTokenized)
-        print("WithplaceHolders:",self.withPlaceHolders)
-        print("WithplaceHoldersTokenized",self.withPlaceHoldersTokenized)
-        print("Information:",self.information)
-
-    def getName(self):
-        from difflib import SequenceMatcher
-        import chatterbot.comparisons
-        similarity = -1
-        name = None
-        for n in INFO.PEOPLE.keys():
-            sim = SequenceMatcher(
-                None,
-                n,
-                self.clean
-            )
-            percent = round(sim.ratio(), 2)
-            if percent > similarity:
-                name = n
-                similarity = percent
-        return name
-
-
-    def getCourseName(self):
-        from difflib import SequenceMatcher
-        match = re.search(r"(([a-zA-Z]{3}) ?\d{3})",self.raw)
-        if match is not None:
-            code = match.group(1).replace(" ","").lower()
-            for key,val in INFO.COURSES.items():
-                if val["code"].find(code) != -1:
-                    return key
-        import chatterbot.comparisons
-        similarity = -1
-        name = None
-        for n in INFO.COURSES.keys():
-            sim = SequenceMatcher(
-                None,
-                n,
-                self.clean
-            )
-            percent = round(sim.ratio(), 2)
-            if percent > similarity:
-                name = n
-                similarity = percent
-        return name
-
-    def extractInformation(self):
-        #People
-        name = self.getName()
-        self.information[INFO.Q_NAME] = self.getName()
-        self.information[INFO.A_OFFICE] = INFO.PEOPLE[name]["office"]
-        self.information[INFO.A_MAIL] = INFO.PEOPLE[name]["mail"]
-        self.information[INFO.A_TEL] = INFO.PEOPLE[name]["tel"]
-        self.information[INFO.A_RESEARCH_AREAS] = INFO.PEOPLE[name]["research"]
-        self.information[INFO.A_WEBSITE] = INFO.PEOPLE[name]["website"]
-        #Location
-        if INFO.Q_CLASSROOM in self.information:
-            self.information[INFO.A_CLASSROOM_LOC] = INFO.LOCATIONS[self.information[INFO.Q_CLASSROOM]]
-        #Course
-        courseName = self.getCourseName()
-        self.information[INFO.A_COURSE_NAME] = courseName
-        self.information[INFO.A_COURSE_CODE] = INFO.COURSES[courseName]["code"]
-        self.information[INFO.A_COURSE_CREDIT] = INFO.COURSES[courseName]["credit"]
-        self.information[INFO.A_COURSE_INFO] = INFO.COURSES[courseName]["info"]

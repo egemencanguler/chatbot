@@ -30,20 +30,53 @@ def importConversations(filePath):
     return conversations
 
 def multiplyConversation(con):
+    # Replace placeholders
     question = con[0]
-    if question.find(INFO.Q_NAME) != -1:
+    answer = con[1]
+    qMatch = re.search("(<[^>]*>)",question)
+    aMatch = re.search("(<[^>]*>)",answer)
+    if qMatch:
+        qPlaceHolder = qMatch.group(1)
         variations = []
-        for name in INFO.PEOPLE.keys():
-            variations.append([question.replace(INFO.Q_NAME,name),con[1]])
-        return variations
-    if question.find(INFO.Q_COURSE_NAME) != -1:
-        variations = []
-        for name in INFO.COURSES.keys():
-            variations.append([question.replace(INFO.Q_COURSE_NAME, name), con[1]])
-        return variations
-    if question.find(INFO.Q_COURSE_CODE) != -1:
-        variations = []
-        for name in [INFO.COURSES[x]["code"] for x in INFO.COURSES.keys()]:
-            variations.append([question.replace(INFO.Q_COURSE_CODE, name), con[1]])
-        return variations
+        if qPlaceHolder == INFO.Q_NAME:
+            for name in INFO.PEOPLE.keys():
+                a = answer
+                if aMatch:
+                    aPlaceHolder = aMatch.group(1)
+                    a = answer.replace(aPlaceHolder,INFO.PEOPLE[name][aPlaceHolder])
+                variations.append([question.replace(INFO.Q_NAME, name), a])
+            return variations
+        elif qPlaceHolder == INFO.Q_COURSE_NAME:
+            variations = []
+            for name in INFO.COURSES.keys():
+                a = answer
+                if aMatch:
+                    aPlaceHolder = aMatch.group(1)
+                    a = answer.replace(aPlaceHolder, INFO.COURSES[name][aPlaceHolder])
+                variations.append([question.replace(INFO.Q_COURSE_NAME, name), a])
+            return variations
+        elif qPlaceHolder == INFO.Q_COURSE_CODE:
+            variations = []
+            for name, code in [[x, INFO.COURSES[x]["<CourseCode>"]] for x in INFO.COURSES.keys()]:
+                a = answer
+                if aMatch:
+                    aPlaceHolder = aMatch.group(1)
+                    a = answer.replace(aPlaceHolder, INFO.COURSES[name][aPlaceHolder])
+                variations.append([question.replace(INFO.Q_COURSE_CODE, code), a])
+            return variations
+        elif qPlaceHolder == INFO.Q_CLASSROOM:
+            variations = []
+            for classroom in INFO.LOCATIONS.keys():
+                a = answer
+                if aMatch:
+                    aPlaceHolder = aMatch.group(1)
+                    a = answer.replace(aPlaceHolder, INFO.LOCATIONS[classroom])
+                variations.append([question.replace(INFO.Q_CLASSROOM, classroom), a])
+                print(variations)
+            return variations
     return [con]
+
+
+# con = importConversations("./conversation_data/questions.txt")
+# for c in con:
+#     print(c)

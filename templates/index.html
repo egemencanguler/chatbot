@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Chat - Customer Module</title>
+<style>
+    /* CSS Document */
+body {
+    font:12px arial;
+    color: #222;
+    text-align:center;
+    padding:35px; }
+
+form, p, span {
+    margin:0;
+    padding:0; }
+
+input { font:12px arial; }
+
+a {
+    color:#0000FF;
+    text-decoration:none; }
+
+    a:hover { text-decoration:underline; }
+
+#wrapper, #loginform {
+    margin:0 auto;
+    padding-bottom:25px;
+    background:#EBF4FB;
+    width:504px;
+    border:1px solid #ACD8F0; }
+
+#loginform { padding-top:18px; }
+
+    #loginform p { margin: 5px; }
+
+#chatbox {
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:25px;
+    padding:10px;
+    background:#fff;
+    height:270px;
+    width:430px;
+    border:1px solid #ACD8F0;
+    overflow:auto; }
+
+#usermsg {
+    width:395px;
+    border:1px solid #ACD8F0; }
+
+#submit { width: 60px; }
+
+.error { color: #ff0000; }
+
+#menu { padding:12.5px 25px 12.5px 25px; }
+
+.welcome { float:left; }
+
+.logout { float:right; }
+
+.msgln { margin:0 0 2px 0; }
+
+</style>
+
+
+</head>
+
+<div id="wrapper">
+    <div id="menu">
+        <p class="welcome">Hoşgeldiniz <b></b></p>
+        <div style="clear:both"></div>
+    </div>
+
+    <div id="chatbox">
+        <p><font id="questionContainer" color="blue">Question</font></p>
+        <p><font id="answerContainer" color="black">Answer</font></p>
+    </div>
+
+    <form name="message" action="/ask">
+        <input name="question" type="text" id="question" size="63" />
+        <input name="submitmsg" type="submit"  id="submitmsg" value="Sor" />
+    </form>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script type="text/javascript">
+// jQuery Document
+$(document).ready(function(){
+
+});
+
+//If user submits the form
+	$("#submitmsg").click(function(){
+		var clientmsg = document.getElementById("question").value;
+		$.post("ask", {question: clientmsg},
+            function(data, status)
+            {
+                var response = data.split("</>");
+                var qContainer = document.getElementById("questionContainer");
+                var aContainer = document.getElementById("answerContainer");
+                qContainer.innerHTML = response[0];
+                aContainer.innerHTML = response[1];
+            }
+        );
+		$("#question").attr("value", "");
+		return false;
+	});
+</script>
+</body>
+</html>

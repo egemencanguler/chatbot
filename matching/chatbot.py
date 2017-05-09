@@ -16,34 +16,26 @@ class Chatbot:
                 # }
                 # "chatterbot.logic.MathematicalEvaluation",
                 {"import_path": "logic_adapters.vector_logic_adapter.VectorLogicAdapter"},
-                {"import_path": "logic_adapters.fixed_logic_adapter.FixedLogicAdapter"}
+                # {"import_path": "logic_adapters.fixed_logic_adapter.FixedLogicAdapter"}
 
             ],
             database="chatbot",
             read_only=True  # don't train bot with user data
         )
         self.chatbot.tracker = Tracker()
-        self.__train()
 
     def answer(self,text):
-        print("")
         print("Question",text)
-        self.chatbot.question = Question(text)
-        self.chatbot.question.extractInformation()
-        self.chatbot.question.show()
         print("\nAnswering..")
         rawResponse = self.chatbot.get_response(text).text
         response = self.__processResponse(rawResponse)
         self.chatbot.tracker.addConversation(text,rawResponse)
         return response
 
-    def __train(self):
-        return
+    def train(self,path):
         from chatterbot.trainers import ListTrainer
-        from database.database import DataBase
         import conversation_helper
-
-        conversations = conversation_helper.importConversations("./conversation_data/questions.txt")
+        conversations = conversation_helper.importConversations(path)
         print("Training..", len(conversations))
 
         self.chatbot.set_trainer(ListTrainer)

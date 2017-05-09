@@ -8,24 +8,21 @@ Nasılsın?
 Selam?
 Merhaba, size nasıl yardımcı olabilirim?
 *
-sa?
-Merhaba, size nasıl yardımcı olabilirim?
-*
 Naber?
 Merhaba, size nasıl yardımcı olabilirim?
 *
 #Location#
 <Classroom> dersliği nerede?
-<Classroom> dersliği <ClassroomLoc> katta.
+<ClassroomLoc> katta.
 *
 <Classroom> dersliği hangi katta?
-<Classroom> dersliği <ClassroomLoc> katta.
+<ClassroomLoc> katta.
 *
 <Classroom> dersliğine nasıl giderim?
-<Classroom> dersliği <ClassroomLoc> katta.
+<ClassroomLoc> katta.
 *
 <Classroom> nerede?
-<Classroom> dersliği <ClassroomLoc> katta.
+<ClassroomLoc> katta.
 *
 #About Teachers#
 <Name> hocanın odası nerede?
@@ -102,6 +99,9 @@ Tel : (+90) 312 297 75 00, Fax : (+90) 312 297 75 02, E-mail : info@cs.hacettepe
 *
 Bölüme nasıl ulaşırım?
 https://www.google.com/maps?ll=39.871106,32.736268&z=17&t=m&hl=en-US&gl=TR&mapclient=embed&cid=15253245872814471554
+*
+Adın ne?
+Adım HÜBOT.
 *
 
 

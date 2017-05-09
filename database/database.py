@@ -12,7 +12,7 @@ class DataBase:
         from pymongo import MongoClient
         self.client = MongoClient()
         self.tr_vectors = self.client.tr_vectors.tr_vectors
-        self.tr_sentence = self.client.tr_sentence
+        self.tr_sentence = self.client.tr_sentence.tr_sentence
         pass
 
     def insertVector(self,word,vector):
@@ -21,9 +21,21 @@ class DataBase:
 
     def getVector(self,word):
         data = self.tr_vectors.find_one({"_id":word})
-        if data == None:
+        if data is None:
             return None
         return data["vec"]
+
+    def cacheSentence(self,sentence,vector):
+        data = {"_id": sentence, "vec": vector}
+        self.tr_sentence.insert_one(data)
+
+    def getSentenceVector(self,sentence):
+        data = self.tr_sentence.find_one({"_id": sentence})
+        if data is None:
+            return None
+        return data["vec"]
+
+
 
 
 

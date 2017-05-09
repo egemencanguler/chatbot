@@ -10,7 +10,6 @@ class VectorLogicAdapter(LogicAdapter):
         super(VectorLogicAdapter, self).__init__(**kwargs)
         self.db = DataBase()
         self.stemmer = Stemmer()
-        self.cache = {}
 
     def getVector(self,tokens,info):
         vec = [0 for x in range(200)]
@@ -21,7 +20,8 @@ class VectorLogicAdapter(LogicAdapter):
             if v is not None:
                 vec = [x + y for x, y in zip(vec, v)]
             elif info:
-                print("No vector for word", t,"or",self.stemmer.stem(t))
+                pass
+                # print("No vector for word", t,"or",self.stemmer.stem(t))
         return vec
 
     def cosine_similarity(self,vec1, vec2):
@@ -33,15 +33,22 @@ class VectorLogicAdapter(LogicAdapter):
             return 0
         return dot / div
 
+    def getStatementVec(self,statement):
+        vec = self.db.getSentenceVector(statement.text)
+        if vec is None:
+            t = self.__tokenize(statement.text)
+            vec = self.getVector(t, False)
+            self.db.cacheSentence(statement.text, vec)
+        return vec
 
     def get(self, input_statement):
         """
         Takes a statement string and a list of statement strings.
         Returns the closest matching statement from the list.
         """
-        print("Get Response Statements")
+        # print("Get Response Statements")
         statement_list = self.chatbot.storage.get_response_statements()
-        print("Get Response Statements End")
+        # print("Get Response Statements End")
 
         if not statement_list:
             if self.chatbot.storage.count():
@@ -58,39 +65,41 @@ class VectorLogicAdapter(LogicAdapter):
 
         closest_match = input_statement
         closest_match.confidence = 0
+        closest_match.lev = 0
+        closest_match.cos = 0
         # Find the closest matching known statement
-        questionVector = self.getVector(input_statement.question.cleanTokenized,True)
-        print("Comparing...")
+        questionVector = self.getVector(input_statement.tokens, True)
         for statement in statement_list:
-            statement.question = Question(statement.text)
-            lev1 = Statement(input_statement.question.withPlaceHolders)
-            lev2 = Statement(statement.question.withPlaceHolders)
-            lev_similarity = comparisons.levenshtein_distance(lev1,lev2)
-            vec = None
-            # TODO remove hacky implementation of caching, there are better aproaches.
-            if statement.question.clean in self.cache:
-                vec = self.cache[statement.question.clean]
-            else:
-                vec = self.getVector(statement.question.cleanTokenized,False)
-                self.cache[statement.question.clean] = vec
-            cosine_similarity = self.cosine_similarity(questionVector,vec)
+            vec = self.getStatementVec(statement)
+            lev_similarity = comparisons.levenshtein_distance(Statement(input_statement.text),
+                                                              Statement(statement.text))
+            cosine_similarity = self.cosine_similarity(questionVector, vec)
             #normalize
             cosine_similarity = (cosine_similarity + 1) / 2
-            confidence = cosine_similarity
-            #print(statement.text,cosine_similarity,lev_similarity)
             # print(statement.text,cosine_similarity,lev_similarity)
-            if confidence > closest_match.confidence:
-                statement.confidence = confidence
+            if cosine_similarity > closest_match.cos:
                 closest_match = statement
-        print("Comparing is done")
+                closest_match.lev = lev_similarity
+                closest_match.cos = cosine_similarity
+            elif abs(cosine_similarity - closest_match.cos) < 0.01 and lev_similarity > closest_match.lev:
+                closest_match = statement
+                closest_match.lev = lev_similarity
+                closest_match.cos = cosine_similarity
+
+        # print("Comparing is done")
+        if closest_match.cos > 0.5:
+            closest_match.confidence = closest_match.cos
+        else:
+            closest_match.confidence = closest_match.lev
+        print("Closest Match:", closest_match, closest_match.lev, closest_match.cos)
         return closest_match
 
     def process(self,input_statement):
 
-        input_statement.question = self.chatbot.question
+        input_statement.tokens = self.__tokenize(input_statement.text)
 
         # Select the closest match to the input statement
-        print("Selecting closest match")
+        # print("Selecting closest match")
         closest_match = self.get(input_statement)
         self.logger.info('Using "{}" as a close match to "{}"'.format(
             input_statement.text, closest_match.text
@@ -119,8 +128,19 @@ class VectorLogicAdapter(LogicAdapter):
 
             # Set confidence to zero because a random response is selected
             response.confidence = 0
-        print("Confidence",response.confidence)
+        print("Confidence",response,response.confidence)
         return response.confidence, response
+
+    def __tokenize(self,text):
+        import re
+        punctuations = (r"\.", r":", r";", r"\?", ",", "!")
+        tokens = []
+        text = text.lower().strip()
+        # processed = re.sub(r'<.*>', '', text)
+        for p in punctuations:
+            text = re.sub(p, " " + p.replace("\\", ""), text)
+        tokens += [t for t in re.split(" +", text) if t != ""]
+        return tokens
 
 #
 # adapter = VectorLogicAdapter()
