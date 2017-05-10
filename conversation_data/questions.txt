@@ -46,23 +46,15 @@ Merhaba, size nasıl yardımcı olabilirim?
 #Students#
 Bölüm mailim ne?
 Öğrenci numaranızı söylerseniz yardımcı olabilirim.
-<StudentNo>
-Bölüm mailiniz b<StudentNo>@cs.hacettepe.edu.tr
 *
 Mailimi söyleyebilirmisin?
 Öğrenci numaranızı söylerseniz yardımcı olabilirim.
-<StudentNo>
-Bölüm mailiniz b<StudentNo>@cs.hacettepe.edu.tr
 *
 Mailim ne?
 Öğrenci numaranızı söylerseniz yardımcı olabilirim.
-<StudentNo>
-Bölüm mailiniz b<StudentNo>@cs.hacettepe.edu.tr
 *
 Bölüm mail adresimi öğrenebilirmiyim?
 Öğrenci numaranızı söylerseniz yardımcı olabilirim.
-<StudentNo>
-Bölüm mailiniz b<StudentNo>@cs.hacettepe.edu.tr
 *
 #Courses with course no#
 <CourseCode> dersi hakkında bilgi alabilirmiyim?
@@ -103,6 +95,201 @@ https://www.google.com/maps?ll=39.871106,32.736268&z=17&t=m&hl=en-US&gl=TR&mapcl
 Adın ne?
 Adım HÜBOT.
 *
+D7 dersliği nerede?
+İlginçtir ki öyle bir derslik yok.
+*
+Bilgisayar laboratuvarı nerede?
+Zemin katta.
+*
+Tuvaletler ne tarafta?
+Bodrum, zemin, 1 ve 2. katlarda.
+*
+Aracımı bölüm otoparkına park edebilir miyim?
+Hayir.
+*
+Sekreterlik nerede?
+1.katta.
+*
+Bölüm başkanının odası nerede?
+1. Katta sekreterliğin karşısında.
+*
+Bölüm başkanını nerede bulabilirim?
+1. Katta sekreterligin karsisinda.
+*
+Kablosuz internet çekiyor mu?
+Evet.
+*
+Kablosuz internetin şifresi ne?
+donaldknuth
+*
+Acıktım. Yakınlarda nerede yemek yiyebilirim?
+Nacho Cafe' de.
+*
+Nereden çıktı alabilirim?
+2.Katta koridorun sonundaki bilgisayarı kullanabilirsin.
+*
+Bölüm sabah kaçta açılıyor?
+6.00' da.
+*
+Bölüm akşam kaçta kapanıyor?
+00.00' da.
+*
+Otobüs durağı nerede?
+Anayol uzerinde.
+*
+Ego kartıma nerede para yükletebilirim?
+Kampüste para yükleyecek yer yok.
+*
+Yıldız Amfi nerede?
+Kütüphanenin karşısında.
+*
+Bölüm başkanı kim?
+Mehmet Önder Efe.
+*
+Bölüm başkanının telefon numarası kaç?
+(0312) 780 7554.
+*
+Bölüm başkan yardımcısı kim?
+Pınar Duygulu.
+*
+Bölüm başkan yardımcısının telefonu kaç?
+(0312) 780 7508.
+*
+Sekreterliğin numarası kaç?
+Sekreterliğe (0312) 780 7555 nolu numaradan ulaşabilirsiniz.
+*
+Önder hoca bu donem hangi dersleri veriyor?
+Dinamik sistemler.
+*
+Ebru Hoca hangi dersleri veriyor?
+Veri Yönetimi, Tasarım Örüntüleri.
+*
+Harun Hoca hangi dersleri veriyor?
+İşletim Sistemleri, Bilgisayar Yapısı, Mikroişleyiciler.
+*
+Ahmet Burak Hoca hangi dersleri veriyor?
+İşletim sistemleri, Güvenli Programlama, Bilgi Güvenliği.
+*
+Burcu Hoca hangi dersleri veriyor?
+Doğal Dil İşleme.
+*
+Ufuk Hoca hangi dersleri veriyor?
+Mantıksal Tasarım, Oyun Teknolojileri.
+*
+Mustafa Ege Hoca hangi dersleri veriyor?
+Veri Yapıları, Algoritmalar, Algoritma Analizi.
+*
+Nazlı Hoca hangi dersleri veriyor?
+Veri Tabanı Yönetim Sistemleri, Bilgisayarlı Görü.
+*
+Aykut Hoca hangi dersleri veriyor?
+Görüntü İşleme.
+*
+Adnan Hoca hangi dersleri veriyor?
+Veri Yapıları, Algoritmalar, Koşut İşlem.
+*
+Staj sorumlusu hoca kim?
+Nazlı İkizler Cinbiş.
+*
+Bölümde kaç asistan hoca var?
+31.
+*
+Çağdaş hocanın odasında başka kimler çalışıyor?
+Emre Aydogan, Aysun Kocak.
+*
+Programlamaya Giriş 1 dersi kaç kredi?
+6 kredi.
+*
+Programlamaya Giriş Lab 1 dersi kaç kredi?
+4 kredi.
+*
+Veri Yapıları dersi kaç kredi?
+5 kredi.
+*
+Mantıksal Tasarım dersi kaç kredi?
+5 kredi.
+*
+Olasılık dersi kaç kredi?
+5 kredi.
+*
+Kesikli Matematiksel Yapılar dersi kaç kredi?
+5 kredi.
+*
+Algoritmalar dersi kaç kredi?
+4 kredi.
+*
+Bilgisayar Yapısı dersi kaç kredi?
+4
+*
+İşletim Sistemleri dersi kaç kredi?
+5 kredi.
+*
+Programlama Dilleri dersi kaç kredi?
+4 kredi.
+*
+Programlama Dilleri dersini hangi hoca veriyor?
+Nazlı İkizler Cinbiş, Pınar Duygulu.
+*
+İşletim sistemleri dersini hangi hoca veriyor?
+Harun Artuner, Kayhan İmre, Ahmet Burak Can.
+*
+Veri Yönetimi dersini hangi hoca veriyor?
+Gönenç Ercan, Ebru Sezer.
+*
+Algoritmalar dersini hangi hoca veriyor?
+Mustafa Ege, Adnan Özsoy.
+*
+Oyun Teknolojileri dersini hangi hoca veriyor?
+Ufuk Çelikcan.
+*
+Gömülü Sistemler dersini hangi hoca veriyor?
+Mehmet Önder Efe, Mehmet Köseoğlu.
+*
+Koşut İşlem dersini hangi hoca veriyor?
+Adnan Özsoy, Kayhan İmre.
+*
+Yazılım Mühendisliği dersini hangi hoca veriyor?
+Ayça Tarhan, Vahid Garoussi.
+*
+Bilgisayar Yapısı dersini hangi hoca veriyor?
+Süleyman Tosun, Harun Artuner.
+*
+Kesikli Matematiksel Yapılar dersini hangi hoca veriyor?
+Haşmet Gürçay, Lale Özkahya.
+*
+Mezun olmak icin kaç krediye ihtiyacım var?
+240 akts.
+*
+Kaç kredi alan dışı seçmeli ders almam gerekli?
+24.
+*
+Bir donemde toplam kaç kredilik ders alabilirim?
+40
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

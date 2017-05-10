@@ -1,5 +1,4 @@
 
-from containers.question import Question
 from information.tracker import Tracker
 import information.information as INFO
 class Chatbot:
@@ -9,14 +8,9 @@ class Chatbot:
             "HÜBOT",
             storage_adapter="chatterbot.storage.MongoDatabaseAdapter",
             logic_adapters=[
-                # {
-                #     "import_path": "chatterbot.logic.BestMatch",
-                #     "statement_comparison_function": "chatterbot.comparisons.levenshtein_distance",
-                #     "response_selection_method": "chatterbot.response_selection.get_first_response"
-                # }
-                # "chatterbot.logic.MathematicalEvaluation",
                 {"import_path": "logic_adapters.vector_logic_adapter.VectorLogicAdapter"},
-                # {"import_path": "logic_adapters.fixed_logic_adapter.FixedLogicAdapter"}
+                {"import_path": "logic_adapters.fixed_logic_adapter.FixedLogicAdapter"},
+                {"import_path": "logic_adapters.no_answer_logic_adapter.NoAnswerAdapter"}
 
             ],
             database="chatbot",
@@ -54,8 +48,6 @@ class Chatbot:
                 now = datetime.now()
                 response = response.replace(p,'Saat ' + now.strftime('%H:%M'))
                 pass
-            else:
-                response = response.replace(p,self.chatbot.question.getInformation(p))
         return response
 
 

@@ -1,7 +1,6 @@
 from chatterbot.logic.logic_adapter import LogicAdapter
 from database.database import DataBase
 from preprocessing.stemmer import Stemmer
-from containers.question import Question
 import chatterbot.comparisons as comparisons
 from chatterbot.conversation import Statement
 
@@ -42,13 +41,7 @@ class VectorLogicAdapter(LogicAdapter):
         return vec
 
     def get(self, input_statement):
-        """
-        Takes a statement string and a list of statement strings.
-        Returns the closest matching statement from the list.
-        """
-        # print("Get Response Statements")
         statement_list = self.chatbot.storage.get_response_statements()
-        # print("Get Response Statements End")
 
         if not statement_list:
             if self.chatbot.storage.count():
@@ -69,35 +62,40 @@ class VectorLogicAdapter(LogicAdapter):
         closest_match.cos = 0
         # Find the closest matching known statement
         questionVector = self.getVector(input_statement.tokens, True)
-        for statement in statement_list:
-            vec = self.getStatementVec(statement)
-            lev_similarity = comparisons.levenshtein_distance(Statement(input_statement.text),
-                                                              Statement(statement.text))
-            cosine_similarity = self.cosine_similarity(questionVector, vec)
-            #normalize
-            cosine_similarity = (cosine_similarity + 1) / 2
-            # print(statement.text,cosine_similarity,lev_similarity)
-            if cosine_similarity > closest_match.cos:
-                closest_match = statement
-                closest_match.lev = lev_similarity
-                closest_match.cos = cosine_similarity
-            elif abs(cosine_similarity - closest_match.cos) < 0.01 and lev_similarity > closest_match.lev:
-                closest_match = statement
-                closest_match.lev = lev_similarity
-                closest_match.cos = cosine_similarity
+        if not all(x == 0 for x in questionVector):
+            # If there is a vector for the statement compare it with all other
+            # statements in the database
+            for statement in statement_list:
+                vec = self.getStatementVec(statement)
+                lev_similarity = comparisons.levenshtein_distance(Statement(input_statement.text),
+                                                                  Statement(statement.text))
+                cosine_similarity = self.cosine_similarity(questionVector, vec)
+                # normalize
+                cosine_similarity = (cosine_similarity + 1) / 2
+                if all(x == 0 for x in vec):
+                    # There is no vector for the statement so the comparison is meaningless
+                    lev_similarity = 0
+                    cosine_similarity = 0
 
-        # print("Comparing is done")
-        if closest_match.cos > 0.5:
-            closest_match.confidence = closest_match.cos
-        else:
-            closest_match.confidence = closest_match.lev
-        print("Closest Match:", closest_match, closest_match.lev, closest_match.cos)
+                # print(statement.text,cosine_similarity,lev_similarity)
+                if cosine_similarity > closest_match.cos:
+                    closest_match = statement
+                    closest_match.lev = lev_similarity
+                    closest_match.cos = cosine_similarity
+                elif abs(cosine_similarity - closest_match.cos) < 0.01 and lev_similarity > closest_match.lev:
+                    closest_match = statement
+                    closest_match.lev = lev_similarity
+                    closest_match.cos = cosine_similarity
+
+        closest_match.confidence = closest_match.cos
+        print("Closest Match:", closest_match,\
+              "Lev:",closest_match.lev, \
+              "Cos:",closest_match.cos, "Confidence:",closest_match.confidence)
         return closest_match
 
     def process(self,input_statement):
 
         input_statement.tokens = self.__tokenize(input_statement.text)
-
         # Select the closest match to the input statement
         # print("Selecting closest match")
         closest_match = self.get(input_statement)

@@ -76,7 +76,3 @@ def multiplyConversation(con):
             return variations
     return [con]
 
-
-# con = importConversations("./conversation_data/questions.txt")
-# for c in con:
-#     print(c)
