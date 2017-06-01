@@ -1,5 +1,4 @@
 
-from information.tracker import Tracker
 import information.information as INFO
 class Chatbot:
     def __init__(self):
@@ -16,14 +15,12 @@ class Chatbot:
             database="chatbot",
             read_only=True  # don't train bot with user data
         )
-        self.chatbot.tracker = Tracker()
 
     def answer(self,text):
         print("Question",text)
         print("\nAnswering..")
         rawResponse = self.chatbot.get_response(text).text
         response = self.__processResponse(rawResponse)
-        self.chatbot.tracker.addConversation(text,rawResponse)
         return response
 
     def train(self,path):

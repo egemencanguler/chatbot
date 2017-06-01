@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from flask import request
 
-from matching.chatbot import Chatbot
+from chatbot.chatbot import Chatbot
 bot = Chatbot()
 
 app = Flask(__name__)

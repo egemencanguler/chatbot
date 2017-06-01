@@ -60,7 +60,7 @@ class VectorLogicAdapter(LogicAdapter):
         closest_match.confidence = 0
         closest_match.lev = 0
         closest_match.cos = 0
-        # Find the closest matching known statement
+        # Find the closest chatbot known statement
         questionVector = self.getVector(input_statement.tokens, True)
         if not all(x == 0 for x in questionVector):
             # If there is a vector for the statement compare it with all other
@@ -157,6 +157,6 @@ class VectorLogicAdapter(LogicAdapter):
 # asd = cosine_similarity(numvector1.reshape(1,-1),numvector2.reshape(1,-1))
 # print("Sklearn",asd)
 #
-# import matching.comparison as COMPARE
+# import chatbot.comparison as COMPARE
 # cosine = COMPARE.cosine_similarity(vector1,vector2)
 # print("Mine", cosine)

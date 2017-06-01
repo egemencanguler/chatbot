@@ -11,8 +11,8 @@ class DataBase:
     def __init__(self):
         from pymongo import MongoClient
         self.client = MongoClient()
-        self.tr_vectors = self.client.tr_vectors.tr_vectors
-        self.tr_sentence = self.client.tr_sentence.tr_sentence
+        self.tr_vectors = self.client.hubot.tr_vectors
+        self.tr_sentence = self.client.hubot.tr_sentence
         pass
 
     def insertVector(self,word,vector):
@@ -35,24 +35,3 @@ class DataBase:
             return None
         return data["vec"]
 
-
-
-
-
-
-# file = open("/Users/macbook/Desktop/vectors_gencor.tur.txt","r")
-# from database.database import DataBase
-# db = DataBase()
-# # print(db.getVector("</s>"))
-# #
-# counter = 0
-# lines = []
-# for line in file:
-#     tokens = line.split(" ")
-#     word = tokens[0]
-#     vector = []
-#     for i in range(1,201):
-#         data = tokens[i].strip()
-#         vector.append(float(data))
-#     db.insertVector(word,vector)
-# file.close()
