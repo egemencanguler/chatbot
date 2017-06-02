@@ -63,8 +63,10 @@ Bölüme nasıl ulaşırım?
 Çayyolu metrosu
 *
 ```
+
 If user asks the question “Burcu hocaya nasıl ulaşırım?”
 Our bot thinks, the question matches better with "Bölüme nasıl ulaşırım". It might be because of the named entities. Vectors training data is not trained for our purpose, thus word “Burcu” don’t have a useful vector.
+
 ---
 There is no structured way to extract and update information. There is also a need to update placeholders after updating the information data.
 
